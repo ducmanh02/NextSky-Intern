@@ -253,70 +253,8 @@
                         </div>
                     </div>
                     <div class="list-item-cart d-flex flex-column gap-20 px-30">
-                        <div class="item">
-                            <hr class="hr-cart mb-20">
-                            <div class="card d-flex gap-10">
-                                <div class="image">
-                                    <img src="./assets/images/product/product11.jpg" alt="product-cart" width="100%"
-                                        height="100%">
-                                </div>
-                                <div class="content d-flex justify-content-between flex-1">
-                                    <div class="d-flex flex-column gap-19">
-                                        <div class="detail">
-                                            <p class="fs-16 fw-400 mb-10">
-                                                Square Textured Striped
-                                            </p>
-                                            <p class="fs-14 fw-400 text-disabled mb-15">
-                                                Black / M
-                                            </p>
-                                            <p class="fs-14 fw-500">$145.00</p>
-                                        </div>
-                                        <div class="quantity-stepper fs-14 fw-400">
-                                            <button onclick="decreaseQuantity()">-</button>
-                                            <span id="quantity1" class="fs-14 fw-400">1</span>
-                                            <button onclick="increaseQuantity()">+</button>
-                                        </div>
-                                    </div>
-                                    <div class="action d-flex flex-column gap-10">
-                                        <img src="./assets/images/icon/edit.svg" alt="edit-button">
-                                        <img src="./assets/images/icon/delete.svg" alt="delete-button">
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
-                        <div class="item">
-                            <hr class="hr-cart mb-20">
-                            <div class="card d-flex gap-10">
-                                <div class="image">
-                                    <img src="./assets/images/product/product11.jpg" alt="product-cart" width="100%"
-                                        height="100%">
-                                </div>
-                                <div class="content d-flex justify-content-between flex-1">
-                                    <div class="d-flex flex-column gap-19">
-                                        <div class="detail">
-                                            <p class="fs-16 fw-400 mb-10">
-                                                Square Textured Striped
-                                            </p>
-                                            <p class="fs-14 fw-400 text-disabled mb-15">
-                                                Black / M
-                                            </p>
-                                            <p class="fs-14 fw-500">$145.00</p>
-                                        </div>
-                                        <div class="quantity-stepper fs-14 fw-400">
-                                            <button onclick="decreaseQuantity()">-</button>
-                                            <span id="quantity2" class="fs-14 fw-400">1</span>
-                                            <button onclick="increaseQuantity()">+</button>
-                                        </div>
-                                    </div>
-                                    <div class="action d-flex flex-column gap-10">
-                                        <img src="./assets/images/icon/edit.svg" alt="edit-button">
-                                        <img src="./assets/images/icon/delete.svg" alt="delete-button">
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
                     </div>
                 </div>
                 <div class="minicart-bottom">
@@ -332,7 +270,7 @@
                             <p class="">
                                 Subtotal:
                             </p>
-                            <p class="">$586.00</p>
+                            <p id="totalPriceElement">$586.00</p>
                         </div>
                         <div class="policy d-flex gap-10 mb-18">
                             <input type="checkbox" name="policy" id="">
@@ -357,7 +295,7 @@
     </div>
     <div class="main">
         <div class="banner-container mb-100">
-            <img src="./assets/images/banner/banner1.jpg" alt="banner1 big" >
+            <img class="banner-big" src="./assets/images/banner/banner1.jpg" alt="banner1 big" >
             <div class="banner-text text-center ">
                 <div class="title mb-20">
                     <p class="fs-80 fs-70-xxl fw-400 ">Stylish <br> Top Trending</p>
