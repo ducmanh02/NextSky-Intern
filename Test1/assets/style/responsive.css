@@ -1,0 +1,70 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for extra small devices */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) SM*/
+@media only screen and (min-width: 600px) {
+  /* CSS rules for small devices */
+}
+
+/* Medium devices (landscape tablets, 768px and up)  M*/
+@media only screen and (min-width: 768px) {
+  /* CSS rules for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) L */
+@media only screen and (min-width: 992px) {
+  /* CSS rules for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) XL */
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+
+  .fs-70-xxl {
+    font-size: 70px;
+  }
+  .px-150-xxl {
+    padding: 0 150px;
+  }
+  .feature-image-item-long {
+    width: 350px;
+    height: 650px;
+  }
+  .feature-image-item-short {
+    width: 350px;
+    height: 310px;
+  }
+  .big-banner-container .big-banner-item img {
+    height: 550px;
+  }
+  .instagramShop-container .image-list .image-item img {
+    width: 210px;
+    height: 210px;
+  }
+}
+/*Extra Extra large devices (large laptops and desktops, 1440px and up)  XXL*/
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  
+  .fs-70-xxl {
+    font-size: 70px;
+  }
+  /* .px-150-xxl {
+    padding: 0 150px;
+  }
+  .feature-image-item-long {
+    width: 350px;
+    height: 650px;
+  }
+  .feature-image-item-short {
+    width: 350px;
+    height: 310px;
+  } */
+  .big-banner-container .big-banner-item img {
+    height: 550px;
+  }
+  .instagramShop-container .image-list .image-item img {
+    width: 210px;
+    height: 210px;
+  }
+}

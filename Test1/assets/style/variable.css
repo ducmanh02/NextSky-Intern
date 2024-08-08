@@ -1,0 +1,303 @@
+
+
+:root{
+    --red-color: #D0473E;
+    --noti-color-1:#177983;
+    --noti-color-2:#D73F0F;
+    --product-color-1:#08382C;
+    --product-color-2:#492919;
+    --product-color-3:#DFD3C2;
+    --hr-color: #e5e8ec;
+    --button-color: #F5F5F5;
+    --disable-color: #999999;
+    --footer-text-color:#555555;
+    --label-header-color-1:#E02F60;
+    --label-header-color-2:#516CF4
+}
+/* Text color */
+.text-white{
+    color:#fff;
+}
+.text-black{
+    color:#111;
+}
+.text-noti-color-red{
+    color: var(--noti-color-2);
+
+
+}
+.text-disabled{
+    color: var(--disable-color)
+}
+.text-footer-color{
+    color: var(--footer-text-color);
+}
+/* text font size font weight */
+.fs-9{
+    font-size: 9px;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-22{
+    font-size: 22px;
+}
+.fs-36{
+    font-size: 36px;
+}
+.fs-45{
+    font-size: 45px;
+}
+.fs-80{
+    font-size: 80px;
+}
+
+
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+/* text styles */
+.text-decoration-none{
+    text-decoration: none;
+}
+.text-decoration-underline{
+    text-decoration: underline;
+}
+.text-decoration-line-through{
+    text-decoration: line-through;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
+}
+
+.line-height-23{
+    line-height: 23px;
+}
+
+/* background color */
+.bg-label-header-1{
+    background: var(--label-header-color-1);
+}
+.bg-label-header-2{
+    background: var(--label-header-color-2);
+}
+.bg-free-ship-loading{
+    background: var(--button-color);
+}
+.bg-white{
+    background: #fff;
+}
+.bg-red{
+    background: var(--red-color);
+}
+.bg-black{
+    background: #000;
+}
+.bg-noti-red{
+    background: var(--noti-color-2);
+}
+.bg-noti-green{
+    background: var(--noti-color-1);
+}
+.bg-noti-gray{
+    background: #757575;
+}
+
+.bg-button-active{
+    background: var(--button-color);
+}
+.bg-product-1{
+    background: var(--product-color-1);
+}
+.bg-product-2{
+    background: var(--product-color-2);
+}
+.bg-product-3{
+    background: var(--product-color-3);
+}
+
+/* padding */
+.p-4{
+    padding: 4px;
+}
+.p-10{
+    padding:10px;
+}
+.p-30{
+    padding:30px;
+}
+.px-25{
+    padding: 0 25px;
+}
+.px-30{
+    padding: 0 30px;
+}
+.px-255{
+    padding: 0 255px;
+}
+.py-10{
+    padding: 10px 0;
+}
+.py-17{
+    padding: 17px 0;
+}
+.py-20{
+    padding: 20px 0;
+}
+.py-23{
+    padding: 23px 0;
+}
+.py-24{
+    padding: 24px 0;
+}
+
+
+/* margin */
+.mt-5{
+    margin-top: 5px;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-18{
+    margin-bottom: 18px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+/* display */
+.d-flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.gap-3{
+    gap:3px;
+}
+.gap-5{
+    gap:5px;
+}
+.gap-8{
+    gap:8px;
+}
+.gap-10{
+    gap:10px;
+}
+.gap-15{
+    gap:15px;
+}
+.gap-19{
+    gap: 19px;
+}
+.gap-16{
+    gap: 16px;
+}
+.gap-20{
+    gap:20px;
+}
+.gap-25{
+    gap:25px;
+}
+.gap-30{
+    gap:30px;
+}
+.gap-80{
+    gap:80px;
+}
+.gap-100{
+    gap:100px;
+}
+.gap-130{
+    gap:130px;
+}
+/* button */ 
+.border-radius-3{
+    border-radius: 3px;
+}
+.border-radius-30{
+    border-radius: 30px;
+}
+.border-black{
+    border: 1px solid #111;
+}
+.border-grey{
+    border: 1px solid #DDDDDD;
+}
+
+/* position */
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+
+/* grid */
