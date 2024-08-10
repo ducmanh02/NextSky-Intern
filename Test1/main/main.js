@@ -27,20 +27,66 @@ function toggleMinicart() {
   minicart.classList.toggle("show");
   overlay.classList.toggle("show");
 }
-const toggleNavbar= () =>{
+let overlay2Visible = false;
+
+const toggleNavbar = () => {
   const nav = document.querySelector(".nav-container");
   const overlay2 = document.querySelector(".overlay2");
-  nav.classList.toggle("show");
-  overlay2.classList.toggle("show");
-}
 
-const toggleSubHome = () =>{
+  nav.classList.toggle("show");
+
+  if (!overlay2Visible) {
+    overlay2.classList.add("show");
+    overlay2Visible = true;
+  } else {
+    overlay2.classList.remove("show");
+    overlay2Visible = false;
+  }
+};
+
+const toggleSubHome = () => {
   const navSubHome = document.querySelector(".nav-container-submenu-home");
   const overlay2 = document.querySelector(".overlay2");
-  navSubHome.classList.toggle("show");
-  overlay2.classList.toggle("show");
-}
 
+  navSubHome.classList.toggle("show");
+
+  if (!overlay2Visible) {
+    overlay2.classList.add("show");
+    overlay2Visible = true;
+  } else {
+    overlay2.classList.remove("show");
+    overlay2Visible = false;
+  }
+};
+
+const toggleSubShop = () => {
+  const navSubHome = document.querySelector(".nav-container-submenu-shop");
+  const overlay2 = document.querySelector(".overlay2");
+
+  navSubHome.classList.toggle("show");
+
+  if (!overlay2Visible) {
+    overlay2.classList.add("show");
+    overlay2Visible = true;
+  } else {
+    overlay2.classList.remove("show");
+    overlay2Visible = false;
+  }
+};
+const toggleSubShopLayout = () => {
+  const navSubHome = document.querySelector(".nav-container-submenu-shop-shoplayout");
+  const overlay2 = document.querySelector(".overlay2");
+
+  navSubHome.classList.toggle("show");
+
+  if (!overlay2Visible) {
+    overlay2.classList.add("show");
+    overlay2Visible = true;
+  } else {
+    overlay2.classList.remove("show");
+    overlay2Visible = false;
+  }
+};
 //freeship remaining
 
 const freeshipRemaingContainer = document.querySelector(
@@ -205,8 +251,8 @@ const updateTotalQuantity = () => {
   });
   console.log(totalProducts);
 
-  document.querySelector(".icon-notice .total-quantity").textContent =
-    totalProducts;
+  document.querySelectorAll(".total-quantity").forEach(icon => {
+    icon.textContent = totalProducts});
   if(totalProducts == 0){
     const cartItem = document.createElement("div");
     cartItemsContainer.appendChild(cartItem);
@@ -217,3 +263,32 @@ const updateTotalQuantity = () => {
 
 updateTotalQuantity();
 
+
+
+// toggle footer-mobile
+const accordionTitles = document.querySelectorAll('.footer-about-mobile-item .accordion');
+const accordionContents = document.querySelectorAll('.open-link');
+const accordionIcons = document.querySelectorAll('.footer-about-mobile-item .icon');
+
+accordionTitles.forEach((title, index) => {
+  title.addEventListener('click', () => {
+    // Thêm/xóa class 'active' cho tiêu đề
+    title.classList.toggle('active');
+
+    // Hiện/ẩn nội dung accordion
+    const content = accordionContents[index];
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+
+    // Cập nhật biểu tượng dấu cộng/trừ
+    const icon = accordionIcons[index];
+    if (content.style.display === 'block') {
+      icon.innerHTML = `<p class="icon-minus"></p>`;
+    } else {
+       icon.innerHTML = `<p class="icon-plus"></p>`;
+    }
+  });
+});
