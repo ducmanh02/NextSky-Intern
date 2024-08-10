@@ -1,8 +1,7 @@
-const closeAdsNotification = () =>{
+const closeAdsNotification = () => {
   const AdsNotification = document.querySelector(".notification");
   AdsNotification.style.display = "none";
-}
-
+};
 
 const toggleHomeModal = () => {
   const modal = document.querySelector(".header-home-hover-modal");
@@ -11,7 +10,7 @@ const toggleHomeModal = () => {
   homeLinkBtn.classList.toggle("active-header-btn");
   const homeLinkIcon = document.querySelector(".home-link-icon");
   homeLinkIcon.classList.toggle("active-header-btn-icon");
-}
+};
 const toggleShopModal = () => {
   const modal = document.querySelector(".header-shop-hover-modal");
   modal.classList.toggle("show");
@@ -19,7 +18,7 @@ const toggleShopModal = () => {
   shopLinkBtn.classList.toggle("active-header-btn");
   const shopLinkIcon = document.querySelector(".shop-link-icon");
   shopLinkIcon.classList.toggle("active-header-btn-icon");
-}
+};
 
 function toggleMinicart() {
   const minicart = document.querySelector(".minicart");
@@ -74,7 +73,9 @@ const toggleSubShop = () => {
   }
 };
 const toggleSubShopLayout = () => {
-  const navSubHome = document.querySelector(".nav-container-submenu-shop-shoplayout");
+  const navSubHome = document.querySelector(
+    ".nav-container-submenu-shop-shoplayout"
+  );
   const overlay2 = document.querySelector(".overlay2");
 
   navSubHome.classList.toggle("show");
@@ -249,11 +250,11 @@ const updateTotalQuantity = () => {
     const quantity = parseInt(item.querySelector(".quantity").textContent);
     totalProducts += quantity;
   });
-  console.log(totalProducts);
 
-  document.querySelectorAll(".total-quantity").forEach(icon => {
-    icon.textContent = totalProducts});
-  if(totalProducts == 0){
+  document.querySelectorAll(".total-quantity").forEach((icon) => {
+    icon.textContent = totalProducts;
+  });
+  if (totalProducts == 0) {
     const cartItem = document.createElement("div");
     cartItemsContainer.appendChild(cartItem);
     console.log("0");
@@ -263,32 +264,112 @@ const updateTotalQuantity = () => {
 
 updateTotalQuantity();
 
-
-
 // toggle footer-mobile
-const accordionTitles = document.querySelectorAll('.footer-about-mobile-item .accordion');
-const accordionContents = document.querySelectorAll('.open-link');
-const accordionIcons = document.querySelectorAll('.footer-about-mobile-item .icon');
+const accordionTitles = document.querySelectorAll(
+  ".footer-about-mobile-item .accordion"
+);
+const accordionContents = document.querySelectorAll(".open-link");
+const accordionIcons = document.querySelectorAll(
+  ".footer-about-mobile-item .icon"
+);
 
 accordionTitles.forEach((title, index) => {
-  title.addEventListener('click', () => {
+  title.addEventListener("click", () => {
     // Thêm/xóa class 'active' cho tiêu đề
-    title.classList.toggle('active');
+    title.classList.toggle("active");
 
     // Hiện/ẩn nội dung accordion
     const content = accordionContents[index];
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
+    if (content.style.display === "block") {
+      content.style.display = "none";
     } else {
-      content.style.display = 'block';
+      content.style.display = "block";
     }
 
     // Cập nhật biểu tượng dấu cộng/trừ
     const icon = accordionIcons[index];
-    if (content.style.display === 'block') {
+    if (content.style.display === "block") {
       icon.innerHTML = `<p class="icon-minus"></p>`;
     } else {
-       icon.innerHTML = `<p class="icon-plus"></p>`;
+      icon.innerHTML = `<p class="icon-plus"></p>`;
     }
   });
+});
+
+//slider banner
+document.addEventListener("DOMContentLoaded", () => {
+  const sliderMain = document.querySelector(".slider-main");
+  const sliderItems = document.querySelectorAll(".slider-item");
+  const nextBtn = document.querySelector(".banner-button-right");
+  const prevBtn = document.querySelector(".banner-button-left");
+  const dotItems = document.querySelectorAll(".dot");
+
+  let index = 0;
+  let position = 0;
+
+  nextBtn.addEventListener("click", () => {
+    handleChangeSlide(1);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    handleChangeSlide(-1);
+  });
+
+  const handleChangeSlide = (direction) => {
+    if (direction === 1) {
+      if (index < sliderItems.length - 1) {
+        position -= 100;
+        index++;
+        sliderMain.style.transform = `translateX(${position}vw)`;
+        updateButtons();
+      }
+    } else if (direction === -1) {
+      if (index > 0) {
+        position += 100;
+        index--;
+        sliderMain.style.transform = `translateX(${position}vw)`;
+        updateButtons();
+      }
+    }
+  };
+
+  const updateButtons = () => {
+    nextBtn.disabled = index === sliderItems.length - 1;
+    prevBtn.disabled = index === 0;
+  };
+  const trendingProductList = document.querySelector("#trending-product-list");
+  const trendingProductListItem = document.querySelectorAll(
+    "#trending-product-list.product-list .product-item"
+  );
+  const tProductPrevBtn = document.querySelector("#prev-trending-product");
+  const tProductNextBtn = document.querySelector("#next-trending-product");
+  
+  const widthT = trendingProductList.scrollWidth + 30;
+  console.log(`Độ rộng của .product-list-wrapper là: ${widthT}px`);
+  console.log(trendingProductListItem.length);
+  const widthPerScreen = 2* widthT / trendingProductListItem.length;
+  console.log("Độ rộng 1 phần tử: ", widthPerScreen);
+  
+  let currentIndex = 0;
+  
+  tProductPrevBtn.addEventListener("click", () => {
+    handleChangeTProduct(-1);
+  });
+  tProductNextBtn.addEventListener("click", () => {
+    handleChangeTProduct(1);
+  });
+  
+  const handleChangeTProduct = (dir) => {
+    if (dir === 1) {
+      if (currentIndex == 0 ) {
+        currentIndex++;
+        trendingProductList.style.transform = `translateX(${-currentIndex * widthPerScreen}px)`;
+      }
+    } else if (dir === -1) {
+      if (currentIndex > 0) {
+        currentIndex--;
+        trendingProductList.style.transform = `translateX(${-currentIndex * widthPerScreen}px)`;
+      }
+    }
+  };
 });

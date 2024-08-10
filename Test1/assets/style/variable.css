@@ -245,6 +245,9 @@
 .align-items-center {
   align-items: center;
 }
+.align-items-start {
+  align-items: flex-start;
+}
 .gap-3 {
   gap: 3px;
 }
@@ -315,8 +318,6 @@
 .active-header-btn-icon {
   filter: invert(0.78) sepia(0.5) hue-rotate(352deg) brightness(0.9);
 }
-
-
 
 .pointer{
  cursor: pointer;

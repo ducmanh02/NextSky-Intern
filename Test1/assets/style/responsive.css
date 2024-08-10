@@ -14,7 +14,7 @@
   .gap-20-mobile {
     gap: 20px;
   }
-  .fs-30-mobile{
+  .fs-30-mobile {
     font-size: 30px;
   }
   .fs-36-mobile {
@@ -38,7 +38,7 @@
   .mb-60-mobile {
     margin-bottom: 60px;
   }
-  .mb-105-mobile{
+  .mb-105-mobile {
     margin-bottom: 105px;
   }
   .px-20-mobile {
@@ -47,10 +47,10 @@
   .px-40-m {
     padding: 0 20px;
   }
-  .py-5-mobile{
+  .py-5-mobile {
     padding: 5px 0;
   }
-  .pt-15-mobile{
+  .pt-15-mobile {
     padding-top: 15px;
   }
   .notification {
@@ -103,29 +103,41 @@
   .feature-image-mobile {
     display: flex;
   }
-  
+
   .trending-container .trending-text .button-list {
     display: none;
   }
-  .trending-text.title.text-mobile{
+  .trending-text.title.text-mobile {
     display: block;
   }
   .button-list-mobile {
     display: flex;
   }
-  .product-item .list-button{
+  .product-item .list-button {
     display: flex;
   }
 
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);    
-    transition: transform 0.5s ease-in-out;
+  .product-list-wrapper{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
   }
+  .product-list{
+    display: flex;
+    position: relative;
+    transition: transform .25s linear;
+    transform: translateX(0px);
+  }
+  .product-item {
+    position: relative;
+    flex: 1 0 48%;
+  }
+
   .product-item .image-product {
     border-radius: 10px;
   }
-  .big-banner-container{
+  .big-banner-container {
     width: auto;
     overflow: scroll;
   }
@@ -139,9 +151,19 @@
     bottom: 30px;
     left: 30px;
   }
-  .customerSay-list{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); ;
+
+  .customerSay-list-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .customerSay-list {
+    display: flex;
+    position: relative;
+    transition: transform 0.25s linear;
+  }
+  .customerSay-item {
+    flex: 1 0 100%;
   }
 
   .instagramShop-container .image-list .image-item img {
@@ -152,7 +174,7 @@
     display: none;
   }
 
-  .footer-about-mobile{
+  .footer-about-mobile {
     display: block;
   }
   .footer-copyright {
@@ -164,23 +186,19 @@
   .footer-copyright-item:nth-child(3) {
     margin: auto;
   }
-  .button-fixed-mobile{
+  .button-fixed-mobile {
     display: block;
   }
-  .menu-bottom-mobile{
+  .menu-bottom-mobile {
     display: flex;
   }
   .minicart {
-    position: fixed;
-    top: 0;
     right: -430px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 430px;
-    height: 100vh;
-    transition: right 0.3s ease-in-out;
-    z-index: 999;
+  }
+  .checkout .button {
+    display: flex;
+    gap: 20px;
   }
 }
 
@@ -261,10 +279,10 @@
     left: 20px;
   }
   .feature-image-item-long .button {
-    bottom: 0%;
+    bottom: 20px;
   }
   .feature-image-item-short .button {
-    bottom: 0%;
+    bottom: 20px;
   }
   .customerSay-item {
     padding: 10px;
@@ -273,10 +291,10 @@
     width: 210px;
     height: 210px;
   }
-  .footer-about{
+  .footer-about {
     display: none;
   }
-  .footer-about-mobile{
+  .footer-about-mobile {
     display: block;
   }
   .footer-about {
@@ -288,11 +306,15 @@
   .footer-copyright-item:nth-child(3) {
     margin: auto;
   }
-  .button-fixed-mobile{
+  .button-fixed-mobile {
     display: block;
   }
-  .menu-bottom-mobile{
+  .menu-bottom-mobile {
     display: flex;
+  }
+  .checkout .button {
+    display: flex;
+    gap: 20px;
   }
 }
 
@@ -362,10 +384,10 @@
     left: 25px;
   }
   .feature-image-item-long .button {
-    bottom: 0%;
+    bottom: 30px;
   }
   .feature-image-item-short .button {
-    bottom: 0%;
+    bottom: 30px;
   }
   .customerSay-item {
     padding: 20px;

@@ -17,3 +17,9 @@ p {
 button{
   cursor: pointer;
 }
+button:hover{
+  opacity: 70%;
+}
+a{
+  cursor: pointer;
+}

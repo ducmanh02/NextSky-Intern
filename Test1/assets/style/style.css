@@ -1,3 +1,6 @@
+a:hover{
+  color: var(--red-color);
+}
 .header .notification {
   position: relative;
 }
@@ -382,12 +385,30 @@ span {
   border: 1px solid #111;
 }
 
-.banner-container {
+
+
+
+
+.slider-wrapper{
+  width: 100%;
+  height: (100vh -150px);
+  object-fit: cover;
+  overflow: hidden;
   position: relative;
+}
+.slider-main{
+  display: flex;
+  position: relative;
+
+  transition: transform .25s linear;
+}
+.slider-item {
+  position: relative;
+  flex: 1 0 100%;
 }
 .banner-container .banner-big {
   width: 100%;
-  height: 810px;
+  height: 100%;
   object-fit: cover;
 }
 .banner-text {
@@ -408,16 +429,16 @@ span {
   background: #fff;
   position: absolute;
   top: 50%;
-  left: 4%;
-  transform: translate(-50%, -50%);
+  left: 30px;
+  transform: translate(0, -50%);
   font-size: 18px;
 }
 .banner-button-right {
   background: #000;
   position: absolute;
   top: 50%;
-  right: 0%;
-  transform: translate(-50%, -50%);
+  right: 30px;
+  transform: translate(0, -50%);
   font-size: 18px;
 }
 .dot-slider {
@@ -452,9 +473,9 @@ span {
 }
 .feature-image-item-long .button {
   position: absolute;
-  bottom: 10%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,0);
 }
 .feature-image-item-long .button button {
   width: 160px;
@@ -472,9 +493,9 @@ span {
 }
 .feature-image-item-short .button {
   position: absolute;
-  bottom: 10%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 .feature-image-item-short .button button {
   width: 160px;
@@ -597,7 +618,6 @@ span {
   top:10px;
   right: 10px;
   gap:5px;
-  /* animation: ease-in-out; */
 }
 .product-item .list-button .item{
   width: 40px;
@@ -693,6 +713,14 @@ span {
 .footer-about-item .text-link text .icon-shop {
   width: 36px;
   height: 36px;
+}
+.footer-about-item a {
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.footer-about-item a:hover  {
+  transform: translateX(10px);
 }
 
 .footer-about-item .contact-form input {
