@@ -94,10 +94,15 @@
     display: flex;
     gap: 20px;
   }
-  .nav-container,.nav-container-submenu-home,.nav-container-submenu-shop,.nav-container-submenu-shop-shoplayout,.minicart{
+  .nav-container,.nav-container-submenu-home,.nav-container-submenu-shop,.nav-container-submenu-shop-shoplayout{
     max-width: 100%;
     width: 100%;
     left:  -100%;
+  }
+  .minicart{
+    max-width: 100%;
+    width: 100%;
+    right:  -100%;
   }
   .banner-container .banner-big {
     height: 550px;
