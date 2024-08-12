@@ -104,7 +104,8 @@
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 430px;
+  min-width: 100%;
+  max-width: 430px;
   height: 100vh;
   transition: left 0.3s ease-in-out;
   z-index: 1100;
@@ -126,10 +127,7 @@
 .active-header-navbar {
   opacity: 100%;
 }
-.nav-container{
-  min-width: 100%;
-  max-width: 430px;
-}
+
 .nav-container .list-link .item {
   margin: 16px 0;
   cursor: pointer;
