@@ -97,6 +97,7 @@
   .nav-container,.nav-container-submenu-home,.nav-container-submenu-shop,.nav-container-submenu-shop-shoplayout,.minicart{
     max-width: 100%;
     width: 100%;
+    left:  -100%;
   }
   .banner-container .banner-big {
     height: 550px;
