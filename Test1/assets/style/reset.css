@@ -11,15 +11,17 @@ p {
   padding: 0;
   border: 0;
 
-  font: inherit;
+  font-family: "Jost", sans-serif;
   vertical-align: baseline;
 }
 button{
   cursor: pointer;
 }
-button:hover{
-  opacity: 70%;
-}
+
 a{
+  font-family: "Jost", sans-serif;
   cursor: pointer;
+}
+a:hover{
+  color: var(--red-color);
 }

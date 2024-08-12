@@ -17,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/variable.css">
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -249,9 +250,9 @@
     </div>
     <div class="main">
         <div class="banner-container mb-100 mb-60-mobile">
-            <div class="slider-wrapper">
-                <div class="slider-main">
-                    <div class="slider-item">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <img class="banner-big" src="./assets/images/banner/banner1.jpg" alt="banner1 big">
                         <div class="banner-text text-center ">
                             <div class="title mb-20">
@@ -269,7 +270,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-item">
+                    <div class="swiper-slide">
                         <img class="banner-big" src="./assets/images/banner/banner1.jpg" alt="banner1 big">
                         <div class="banner-text text-center ">
                             <div class="title mb-20">
@@ -287,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-item">
+                    <div class="swiper-slide">
                         <img class="banner-big" src="./assets/images/banner/banner1.jpg" alt="banner1 big">
                         <div class="banner-text text-center ">
                             <div class="title mb-20">
@@ -305,29 +306,19 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="banner-button banner-button-left d-flex justify-content-center align-items-center pointer">
-                    <img src="./assets/images/icon/buttonPrev.svg" alt="button prev" width="18" height="18">
+                    <p class="icon-chevron-left"></p>
                 </div>
                 <div class="banner-button banner-button-right d-flex justify-content-center align-items-center pointer">
-                    <img src="./assets/images/icon/buttonNext.svg" alt="button prev" width="18" height="18">
+                    <p class="icon-chevron-right"></p>
                 </div>
-                <div class="dot-slider d-flex gap-10">
-                    <div class="dot">
-                        <img src="./assets/images/icon/dot.svg" alt="1" width="8" height="8">
-                    </div>
-                    <div class="dot">
-                        <img src="./assets/images/icon/2.svg" alt="2" width="8" height="8">
-                    </div>
-                    <div class="dot">
-                        <img src="./assets/images/icon/dot.svg" alt="1" width="8" height="8">
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
-
         </div>
-        <div class="feature-container px-255 px-200-xxl px-150-xl px-50-l px-40-m mb-100 mb-60-mobile">
+        <div class="feature-container px-255 px-100-xxl px-80-xl px-50-l px-40-m mb-100 mb-60-mobile">
             <div class="feature-text text-center mb-40 mb-15-mobile">
                 <div class="title">
                     <p class="fs-45 fs-36-mobile fw-400 ">Featured Collections</p>
@@ -396,7 +387,7 @@
                 </div>
             </div>
         </div>
-        <div class="trending-container px-255 px-200-xxl px-150-xl px-50-l px-40-m mb-100 mb-60-mobile">
+        <div class="trending-container px-255 px-100-xxl px-80-xl px-50-l px-40-m mb-100 mb-60-mobile">
             <div class="trending-text text-center mb-40 mb-20-mobile">
                 <div class="title mb-20-mobile">
                     <p class="fs-45 fs-36-mobile fw-400 mb-40 mb-15-mobile">Trending this Week</p>
@@ -423,15 +414,215 @@
                 </div>
                 <div class="button-list-mobile justify-content-center gap-10">
                     <div class="item d-flex justify-content-center align-items-center pointer">
-                        <span id="prev-trending-product" class="icon-chevron-left"></span>
+                        <span id="prev-trending-product" class="icon-chevron-left prev-trending-product pointer"></span>
                     </div>
                     <div class="item d-flex justify-content-center align-items-center pointer">
-                        <span id="next-trending-product" class="icon-chevron-right"></span>
+                        <span id="next-trending-product"
+                            class="icon-chevron-right next-trending-product pointer"></span>
                     </div>
                 </div>
             </div>
+            <div class="swiper trending product-list-wrapper-mobile">
+                <div id="trending-product-list" class="swiper-wrapper product-list d-flex  gap-0-mobile ">
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class="image-product mb-16" src="./assets/images/product/product1.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                </div>
+                            </div>
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title fs-16 fw-400">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                </div>
+                                <div class="price fs-14 fw-500">$150.00</div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class=" image-product mb-16" src="./assets/images/product/product2.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                </div>
+                            </div>
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                </div>
+                                <div class="price fs-14 fw-500 text-noti-color-red">$150.00 <span
+                                        class="text-disabled text-decoration-line-through">$490.00</span></div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label d-flex flex-column gap-3">
+                                <div class="item ">
+                                    <p
+                                        class="border-radius-30 text-white bg-noti-red percent fs-13 fw-400 d-flex justify-content-center align-items-center">
+                                        -10%</p>
+                                </div>
+                                <div class="item">
+                                    <p
+                                        class="border-radius-30 text-white bg-noti-green pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
+                                        Pre-Order</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class="image-product mb-16" src="./assets/images/product/product3.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                </div>
+                            </div>
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                </div>
+                                <div class="price fs-14 fw-500">$150.00</div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class="image-product mb-16" src="./assets/images/product/product4.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                </div>
+                            </div>
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title ">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                </div>
+                                <div class="price fs-14 fw-500">$150.00 - $169.00</div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="product-list-wrapper">
-                <div id="trending-product-list" class="product-list d-flex gap-30 gap-20-mobile ">
+                <div id="trending-product-list" class="product-list d-flex gap-30 gap-15-m  gap-0-mobile ">
                     <div class="product-item flex-1">
                         <img class="image-product mb-16" src="./assets/images/product/product1.jpg" alt="product-image">
                         <div class="list-button fs-14 fw-400">
@@ -618,6 +809,9 @@
                 </div>
             </div>
         </div>
+
+
+
         <div class="big-banner-container d-flex gap-30 gap-20-mobile px-30 mb-100 mb-60-mobile">
             <div class="big-banner-item flex-1">
                 <img src="./assets/images/banner/bigbanner1.png" alt="big banner1">
@@ -635,7 +829,9 @@
                 <img src="./assets/images/banner/bigbanner2.png" alt="big banner1">
                 <div class="text-container">
                     <p class="fs-12 fw-500 text-uppercase mb-20 mb-10-l">Best-Sellers</p>
-                    <p class="fs-36 fs-24-l fs-20-sm fw-400 mb-30 mb-20-l">Unique SS’23</p>
+                    <p
+                        class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-30 mb-20-l mb-25-mobile line-height-50-mobile">
+                        Unique SS’23</p>
                     <p class="fs-12 fw-600 text-uppercase pointer">Shop the Look</p>
                     <hr class="hr-banner">
                 </div>
@@ -644,13 +840,15 @@
                 <img src="./assets/images/banner/bigbanner3.png" alt="big banner1">
                 <div class="text-container">
                     <p class="fs-12 fw-500 text-uppercase mb-20 mb-10-l">limited edition</p>
-                    <p class="fs-36 fs-24-l fs-20-sm fw-400 mb-30 mb-20-l">Autumn Trends</p>
+                    <p
+                        class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-30 mb-20-l mb-25-mobile line-height-50-mobile">
+                        Autumn Trends</p>
                     <p class="fs-12 fw-600 text-uppercase pointer">Shop the Look</p>
                     <hr class="hr-banner">
                 </div>
             </div>
         </div>
-        <div class="newArrivals-container px-255 px-200-xxl px-150-xl px-50-l px-40-m mb-100 mb-60-mobile">
+        <div class="newArrivals-container px-255 px-100-xxl px-80-xl px-50-l px-40-m mb-100 mb-60-mobile">
             <div class="newArrivals-text text-center mb-40 mb-20-mobile">
                 <div class="title mb-25 mb-20-mobile">
                     <p class="fs-45 fs-36 fw-400">New Arrivals</p>
@@ -658,181 +856,387 @@
                 <div class="description mb-20-mobile">
                     <p class="fs-16 fw-400">Here’s some of our new arrivals products people are in love with.</p>
                 </div>
-                <div class="button-list-mobile justify-content-center gap-10 ">
+                <div class="button-list-mobile justify-content-center gap-10">
                     <div class="item d-flex justify-content-center align-items-center pointer">
-                        <span class="icon-chevron-left"></span>
+                        <span id="newArrivals-prev" class="icon-chevron-left"></span>
                     </div>
                     <div class="item d-flex justify-content-center align-items-center pointer">
-                        <span class="icon-chevron-right"></span>
+                        <span id="newArrivals-next" class="icon-chevron-right"></span>
                     </div>
                 </div>
             </div>
-            <div class="product-list d-flex gap-30">
-                <div class="product-item flex-1">
-                    <img class="image-product mb-16" src="./assets/images/product/product5.jpg" alt="product-image">
-                    <div class="list-button fs-14 fw-400">
-                        <div class="item">
-                            <span class="icon-wishlist1"></span>
-                        </div>
-                        <div class="item">
-                            <span class="icon-eye"></span>
-                        </div>
-                        <div class="item">
-                            <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
-                        </div>
-                    </div>
-                    <div class="product-text d-flex flex-column gap-8">
-                        <div class="title fs-16 fw-400">Square Textured Striped</div>
-                        <div class="rating">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                        </div>
-                        <div class="price fs-14 fw-500">$150.00</div>
-                        <div class="color-picker d-flex gap-5">
-                            <div
-                                class="container border-black d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-1">
+            <div id="newArrival" class="swiper newArrival product-list-wrapper-mobile">
+                <div id="trending-product-list" class="swiper-wrapper product-list d-flex  gap-0-mobile ">
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class="image-product mb-16" src="./assets/images/product/product5.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
                                 </div>
                             </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-2">
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title fs-16 fw-400">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                </div>
+                                <div class="price fs-14 fw-500">$150.00</div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-3">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="label d-flex flex-column gap-3">
+                            <div class="label d-flex flex-column gap-3">
 
-                        <div class="item">
-                            <p
-                                class="border-radius-30 text-white bg-noti-gray pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
-                                Sold Out</p>
+                                <div class="item">
+                                    <p
+                                        class="border-radius-30 text-white bg-noti-gray pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
+                                        Sold Out</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-item flex-1">
-                    <img class="image-product mb-16" src="./assets/images/product/product6.jpg" alt="product-image">
-                    <div class="list-button fs-14 fw-400">
-                        <div class="item">
-                            <span class="icon-wishlist1"></span>
-                        </div>
-                        <div class="item">
-                            <span class="icon-eye"></span>
-                        </div>
-                        <div class="item">
-                            <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
-                        </div>
-                    </div>
-                    <div class="product-text d-flex flex-column gap-8">
-                        <div class="title">Square Textured Striped</div>
-                        <div class="rating">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                        </div>
-                        <div class="price fs-14 fw-500 text-noti-color-red">$150.00 <span
-                                class="text-disabled text-decoration-line-through">$490.00</span></div>
-                        <div class="color-picker d-flex gap-5">
-                            <div
-                                class="container border-black d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-1">
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class="image-product mb-16" src="./assets/images/product/product6.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
                                 </div>
                             </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-2">
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
                                 </div>
-                            </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-3">
+                                <div class="price fs-14 fw-500 text-noti-color-red">$150.00 <span
+                                        class="text-disabled text-decoration-line-through">$490.00</span></div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class="image-product mb-16" src="./assets/images/product/product7.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                </div>
+                            </div>
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                </div>
+                                <div class="price fs-14 fw-500">$150.00</div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item flex-1">
+                            <img class="image-product mb-16" src="./assets/images/product/product8.jpg"
+                                alt="product-image">
+                            <div class="list-button fs-14 fw-400">
+                                <div class="item">
+                                    <span class="icon-wishlist1"></span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon-eye"></span>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                </div>
+                            </div>
+                            <div class="product-text d-flex flex-column gap-8">
+                                <div class="title ">Square Textured Striped</div>
+                                <div class="rating">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                    <img src="./assets/images/icon/star.svg" alt="star">
+                                </div>
+                                <div class="price fs-14 fw-500">$150.00 - $169.00</div>
+                                <div class="color-picker d-flex gap-5">
+                                    <div
+                                        class="container border-black d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-1">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-2">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                        <div class="item bg-product-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="product-item flex-1">
-                    <img class="image-product mb-16" src="./assets/images/product/product7.jpg" alt="product-image">
-                    <div class="list-button fs-14 fw-400">
-                        <div class="item">
-                            <span class="icon-wishlist1"></span>
+
+            </div>
+
+            <div class="product-list-wrapper">
+                <div class="product-list d-flex gap-30 gap-0-mobile ">
+                    <div class="product-item flex-1">
+                        <img class="image-product mb-16" src="./assets/images/product/product5.jpg" alt="product-image">
+                        <div class="list-button fs-14 fw-400">
+                            <div class="item">
+                                <span class="icon-wishlist1"></span>
+                            </div>
+                            <div class="item">
+                                <span class="icon-eye"></span>
+                            </div>
+                            <div class="item">
+                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                            </div>
                         </div>
-                        <div class="item">
-                            <span class="icon-eye"></span>
+                        <div class="product-text d-flex flex-column gap-8">
+                            <div class="title fs-16 fw-400">Square Textured Striped</div>
+                            <div class="rating">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                            </div>
+                            <div class="price fs-14 fw-500">$150.00</div>
+                            <div class="color-picker d-flex gap-5">
+                                <div
+                                    class="container border-black d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-1">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-2">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-3">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                        <div class="label d-flex flex-column gap-3">
+
+                            <div class="item">
+                                <p
+                                    class="border-radius-30 text-white bg-noti-gray pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
+                                    Sold Out</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-text d-flex flex-column gap-8">
-                        <div class="title">Square Textured Striped</div>
-                        <div class="rating">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
+                    <div class="product-item flex-1">
+                        <img class="image-product mb-16" src="./assets/images/product/product6.jpg" alt="product-image">
+                        <div class="list-button fs-14 fw-400">
+                            <div class="item">
+                                <span class="icon-wishlist1"></span>
+                            </div>
+                            <div class="item">
+                                <span class="icon-eye"></span>
+                            </div>
+                            <div class="item">
+                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                            </div>
                         </div>
-                        <div class="price fs-14 fw-500">$150.00</div>
-                        <div class="color-picker d-flex gap-5">
-                            <div
-                                class="container border-black d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-1">
+                        <div class="product-text d-flex flex-column gap-8">
+                            <div class="title">Square Textured Striped</div>
+                            <div class="rating">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                            </div>
+                            <div class="price fs-14 fw-500 text-noti-color-red">$150.00 <span
+                                    class="text-disabled text-decoration-line-through">$490.00</span></div>
+                            <div class="color-picker d-flex gap-5">
+                                <div
+                                    class="container border-black d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-1">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-2">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-3">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-2">
-                                </div>
+
+                        </div>
+                    </div>
+                    <div class="product-item flex-1">
+                        <img class="image-product mb-16" src="./assets/images/product/product7.jpg" alt="product-image">
+                        <div class="list-button fs-14 fw-400">
+                            <div class="item">
+                                <span class="icon-wishlist1"></span>
                             </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-3">
+                            <div class="item">
+                                <span class="icon-eye"></span>
+                            </div>
+                            <div class="item">
+                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                            </div>
+                        </div>
+                        <div class="product-text d-flex flex-column gap-8">
+                            <div class="title">Square Textured Striped</div>
+                            <div class="rating">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                            </div>
+                            <div class="price fs-14 fw-500">$150.00</div>
+                            <div class="color-picker d-flex gap-5">
+                                <div
+                                    class="container border-black d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-1">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-2">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-3">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-item flex-1">
-                    <img class="image-product mb-16" src="./assets/images/product/product8.jpg" alt="product-image">
-                    <div class="list-button fs-14 fw-400">
-                        <div class="item">
-                            <span class="icon-wishlist1"></span>
-                        </div>
-                        <div class="item">
-                            <span class="icon-eye"></span>
-                        </div>
-                        <div class="item">
-                            <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
-                        </div>
-                    </div>
-                    <div class="product-text d-flex flex-column gap-8">
-                        <div class="title ">Square Textured Striped</div>
-                        <div class="rating">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                            <img src="./assets/images/icon/star.svg" alt="star">
-                        </div>
-                        <div class="price fs-14 fw-500">$150.00 - $169.00</div>
-                        <div class="color-picker d-flex gap-5">
-                            <div
-                                class="container border-black d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-1">
-                                </div>
+                    <div class="product-item flex-1">
+                        <img class="image-product mb-16" src="./assets/images/product/product8.jpg" alt="product-image">
+                        <div class="list-button fs-14 fw-400">
+                            <div class="item">
+                                <span class="icon-wishlist1"></span>
                             </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-2">
-                                </div>
+                            <div class="item">
+                                <span class="icon-eye"></span>
                             </div>
-                            <div class="container border-grey d-flex justify-content-center align-items-center pointer">
-                                <div class="item bg-product-3">
+                            <div class="item">
+                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                            </div>
+                        </div>
+                        <div class="product-text d-flex flex-column gap-8">
+                            <div class="title ">Square Textured Striped</div>
+                            <div class="rating">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                                <img src="./assets/images/icon/star.svg" alt="star">
+                            </div>
+                            <div class="price fs-14 fw-500">$150.00 - $169.00</div>
+                            <div class="color-picker d-flex gap-5">
+                                <div
+                                    class="container border-black d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-1">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-2">
+                                    </div>
+                                </div>
+                                <div
+                                    class="container border-grey d-flex justify-content-center align-items-center pointer">
+                                    <div class="item bg-product-3">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -840,7 +1244,7 @@
                 </div>
             </div>
         </div>
-        <div class="customerSay-container px-255 px-200-xxl px-150-xl px-50-l px-40-m mb-100 mb-60-mobile">
+        <div class="customerSay-container px-255 px-100-xxl px-80-xl px-50-l px-40-m mb-100 mb-60-mobile">
             <div class="customerSay-text text-center mb-40 mb-20-mobile">
                 <div class="title mb-25 mb-15-mobile">
                     <p class="fs-45 fw-400">Customer Say!</p>
@@ -903,7 +1307,7 @@
                 </div>
             </div>
         </div>
-        <div class="instagramShop-container px-255 px-200-xxl px-150-xl px-50-l px-40-m mb-100 mb-60-mobile">
+        <div class="instagramShop-container px-255 px-100-xxl px-80-xl px-50-l px-40-m mb-100 mb-60-mobile">
             <div class="instagramShop-text text-center mb-40 mb-20-mobile">
                 <div class="title">
                     <p class="fs-45 fw-400 mb-25 mb-15-mobile">Shop by Gram</p>
@@ -953,8 +1357,8 @@
             </div>
         </div>
     </div>
-
-    <div class="footer px-255 px-200-xxl px-150-xl px-50-l px-40-m">
+    </div>
+    <div class="footer px-255 px-100-xxl px-80-xl px-50-l px-40-m">
         <div class="footer-about d-flex justify-content-between gap-30 mb-80">
             <div class="footer-about-item  d-flex flex-column flex-1 w-30-l">
                 <div class="logo mb-30">
@@ -1078,14 +1482,14 @@
                         <p class="icon-plus"></p>
                     </div>
                 </div>
-                <div id="hot-categories" class="open-link text-footer-color d-flex flex-column gap-15 mb-25">
-                    <p>Special Offers</p>
-                    <p>Performance</p>
-                    <p>T-shirts</p>
-                    <p>Underwear</p>
-                    <p>Top Brands</p>
-                    <p>Online</p>
-                    <p>Exclusive</p>
+                <div id="hot-categories" class="open-link text-footer-color flex-column gap-15 mb-25">
+                    <a>Special Offers</a>
+                    <a>Performance</a>
+                    <a>T-shirts</a>
+                    <a>Underwear</a>
+                    <a>Top Brands</a>
+                    <a>Online</a>
+                    <a>Exclusive</a>
                 </div>
             </div>
             <hr class="hr-style">
@@ -1096,14 +1500,14 @@
                         <p class="icon-plus"></p>
                     </div>
                 </div>
-                <div id="customer-service" class="open-link text-footer-color d-flex flex-column gap-15 mb-25">
-                    <p>Privacy Policy </p>
-                    <p>Refund Policy</p>
-                    <p>Shipping & Return</p>
-                    <p>Term & Conditions</p>
-                    <p>Advanced Search</p>
-                    <p>Theme FAQs</p>
-                    <p>Store Locations</p>
+                <div id="customer-service" class="open-link text-footer-color flex-column gap-15 mb-25">
+                    <a>Privacy Policy </a>
+                    <a>Refund Policy</a>
+                    <a>Shipping & Return</a>
+                    <a>Term & Conditions</a>
+                    <a>Advanced Search</a>
+                    <a>Theme FAQs</a>
+                    <a>Store Locations</a>
                 </div>
             </div>
             <hr class="hr-style">
@@ -1114,8 +1518,8 @@
                         <p class="icon-plus"></p>
                     </div>
                 </div>
-                <div id="email-form" class="open-link  mb-30">
-                    <div class="text-footer-color d-flex flex-column gap-15 mb-15">
+                <div id="email-form" class="open-link flex-column mb-30">
+                    <div class="text-footer-color gap-15 mb-15">
                         <p>Enter your email address to get $10 off your first order and free shipping. Updates
                             information on Sales and Offers.</p>
                     </div>
@@ -1129,7 +1533,7 @@
             </div>
         </div>
         <hr class="hr-style">
-        <div class="footer-copyright d-flex justify-content-between">
+        <div class="footer-copyright d-flex justify-content-between mb-60-sm">
             <div class="footer-copyright-item py-20 py-5-mobile d-flex gap-20  fs-16 fw-400 ">
                 <div class="d-flex gap-8">
                     <a class="text-decoration-none text-black fs-16 fw-400 text-footer-color" href="#">English</a>
@@ -1148,7 +1552,7 @@
             <div class="footer-copyright-item py-20 py-5-mobile text-footer-color fs-16 fw-400 ">
                 <p>© 2023 Umino Store. All Rights Reserved.</p>
             </div>
-            <div class="footer-copyright-item d-flex gap-5 py-20 pt-15-mobile-mobile">
+            <div class="footer-copyright-item d-flex gap-5 py-20 pt-15-mobile ">
                 <div class="border-radius-3 p-4 image-container d-flex justify-content-center align-items-center">
                     <img src="./assets/images/payment/visa.png" class="border-radius-3" alt="visa" width="35"
                         height="18">
@@ -1725,6 +2129,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main/main.js"></script>
 </body>
 

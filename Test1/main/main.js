@@ -3,6 +3,8 @@ const closeAdsNotification = () => {
   AdsNotification.style.display = "none";
 };
 
+
+
 const toggleHomeModal = () => {
   const modal = document.querySelector(".header-home-hover-modal");
   modal.classList.toggle("show");
@@ -45,48 +47,18 @@ const toggleNavbar = () => {
 
 const toggleSubHome = () => {
   const navSubHome = document.querySelector(".nav-container-submenu-home");
-  const overlay2 = document.querySelector(".overlay2");
-
   navSubHome.classList.toggle("show");
-
-  if (!overlay2Visible) {
-    overlay2.classList.add("show");
-    overlay2Visible = true;
-  } else {
-    overlay2.classList.remove("show");
-    overlay2Visible = false;
-  }
 };
 
 const toggleSubShop = () => {
   const navSubHome = document.querySelector(".nav-container-submenu-shop");
-  const overlay2 = document.querySelector(".overlay2");
-
   navSubHome.classList.toggle("show");
-
-  if (!overlay2Visible) {
-    overlay2.classList.add("show");
-    overlay2Visible = true;
-  } else {
-    overlay2.classList.remove("show");
-    overlay2Visible = false;
-  }
 };
 const toggleSubShopLayout = () => {
   const navSubHome = document.querySelector(
     ".nav-container-submenu-shop-shoplayout"
   );
-  const overlay2 = document.querySelector(".overlay2");
-
   navSubHome.classList.toggle("show");
-
-  if (!overlay2Visible) {
-    overlay2.classList.add("show");
-    overlay2Visible = true;
-  } else {
-    overlay2.classList.remove("show");
-    overlay2Visible = false;
-  }
 };
 //freeship remaining
 
@@ -280,10 +252,10 @@ accordionTitles.forEach((title, index) => {
 
     // Hiện/ẩn nội dung accordion
     const content = accordionContents[index];
-    if (content.style.display === "block") {
+    if (content.style.display === "flex") {
       content.style.display = "none";
     } else {
-      content.style.display = "block";
+      content.style.display = "flex";
     }
 
     // Cập nhật biểu tượng dấu cộng/trừ
@@ -296,80 +268,34 @@ accordionTitles.forEach((title, index) => {
   });
 });
 
-//slider banner
-document.addEventListener("DOMContentLoaded", () => {
-  const sliderMain = document.querySelector(".slider-main");
-  const sliderItems = document.querySelectorAll(".slider-item");
-  const nextBtn = document.querySelector(".banner-button-right");
-  const prevBtn = document.querySelector(".banner-button-left");
-  const dotItems = document.querySelectorAll(".dot");
 
-  let index = 0;
-  let position = 0;
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".banner-button-right",
+    prevEl: ".banner-button-left",
+  },
+});
 
-  nextBtn.addEventListener("click", () => {
-    handleChangeSlide(1);
-  });
-
-  prevBtn.addEventListener("click", () => {
-    handleChangeSlide(-1);
-  });
-
-  const handleChangeSlide = (direction) => {
-    if (direction === 1) {
-      if (index < sliderItems.length - 1) {
-        position -= 100;
-        index++;
-        sliderMain.style.transform = `translateX(${position}vw)`;
-        updateButtons();
-      }
-    } else if (direction === -1) {
-      if (index > 0) {
-        position += 100;
-        index--;
-        sliderMain.style.transform = `translateX(${position}vw)`;
-        updateButtons();
-      }
-    }
-  };
-
-  const updateButtons = () => {
-    nextBtn.disabled = index === sliderItems.length - 1;
-    prevBtn.disabled = index === 0;
-  };
-  const trendingProductList = document.querySelector("#trending-product-list");
-  const trendingProductListItem = document.querySelectorAll(
-    "#trending-product-list.product-list .product-item"
-  );
-  const tProductPrevBtn = document.querySelector("#prev-trending-product");
-  const tProductNextBtn = document.querySelector("#next-trending-product");
-  
-  const widthT = trendingProductList.scrollWidth + 30;
-  console.log(`Độ rộng của .product-list-wrapper là: ${widthT}px`);
-  console.log(trendingProductListItem.length);
-  const widthPerScreen = 2* widthT / trendingProductListItem.length;
-  console.log("Độ rộng 1 phần tử: ", widthPerScreen);
-  
-  let currentIndex = 0;
-  
-  tProductPrevBtn.addEventListener("click", () => {
-    handleChangeTProduct(-1);
-  });
-  tProductNextBtn.addEventListener("click", () => {
-    handleChangeTProduct(1);
-  });
-  
-  const handleChangeTProduct = (dir) => {
-    if (dir === 1) {
-      if (currentIndex == 0 ) {
-        currentIndex++;
-        trendingProductList.style.transform = `translateX(${-currentIndex * widthPerScreen}px)`;
-      }
-    } else if (dir === -1) {
-      if (currentIndex > 0) {
-        currentIndex--;
-        trendingProductList.style.transform = `translateX(${-currentIndex * widthPerScreen}px)`;
-      }
-    }
-  };
+var newArrivalSwiper = new Swiper(".trending", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: "#next-trending-product",
+    prevEl: "#prev-trending-product",
+  },
+});
+var newArrivalSwiper = new Swiper(".newArrival", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: "#newArrivals-next",
+    prevEl: "#newArrivals-prev",
+  },
 });
