@@ -1,4 +1,12 @@
+@media (max-width: 430px) {
+  .nav-container{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) mobile */
+
 @media only screen and (max-width: 600px) {
   /* CSS rules for extra small devices */
 
@@ -86,7 +94,10 @@
     display: flex;
     gap: 20px;
   }
-
+  .nav-container,.nav-container-submenu-home,.nav-container-submenu-shop,.nav-container-submenu-shop-shoplayout,.minicart{
+    max-width: 100%;
+    width: 100%;
+  }
   .banner-container .banner-big {
     height: 550px;
     object-fit: cover;
