@@ -13,7 +13,7 @@
 .hr-style {
   width: 100%;
   outline: none;
-  border: 1px solid var(--hr-color);
+  border: 0.5px solid var(--hr-color);
 }
 .hr-banner {
   width: 45%;
@@ -199,7 +199,7 @@ span {
 
 /* sub menu shop */
 .nav-container-submenu-shop .list-link .item p,
-span {
+.nav-container-submenu-shop .list-link .item span {
   font-size: 16px;
   font-weight: 500;
 }
@@ -390,7 +390,7 @@ background: #000;
 
 .banner-container .banner-big {
   width: 100%;
-  height: 100%;
+  height: 810px;
   object-fit: cover;
 }
 .banner-text {
@@ -662,13 +662,16 @@ background: #000;
 .big-banner-item {
   position: relative;
 }
+.big-banner-item img:nth-child(1){
+  transform: scaleX(-1);
+}
 .big-banner-item .text-container {
   position: absolute;
   bottom: 50px;
   left: 50px;
 }
 .customerSay-item {
-  padding: 40px;
+  padding: 30px;
   border: 1px solid #ebebeb;
   border-radius: 10px;
 }
@@ -743,6 +746,7 @@ background: #000;
   color: #999999;
   width: 230px;
   height: 50px;
+  flex-grow: 1;
 }
 .footer-about-item .contact-form button {
   padding: 10px;
@@ -837,6 +841,11 @@ background: #000;
   position: absolute;
   top:-10px;
   left:10px;
+}
+
+.rating span{
+  font-size: 10px;
+
 }
 
 

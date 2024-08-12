@@ -9,11 +9,10 @@
 html{
   scroll-behavior: smooth;
 }
-p {
+span, p {
   margin: 0;
   padding: 0;
   border: 0;
-
   font-family: "Jost", sans-serif;
   vertical-align: baseline;
 }
@@ -24,6 +23,7 @@ button{
 a{
   font-family: "Jost", sans-serif;
   cursor: pointer;
+
 }
 a:hover{
   color: var(--red-color);
