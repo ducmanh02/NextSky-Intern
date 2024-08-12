@@ -126,7 +126,10 @@
 .active-header-navbar {
   opacity: 100%;
 }
-
+.nav-container{
+  min-width: 100%;
+  max-width: 430px;
+}
 .nav-container .list-link .item {
   margin: 16px 0;
   cursor: pointer;
@@ -255,7 +258,8 @@ span {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 450px;
+  min-width: 100%;
+  max-width: 450px;
   height: 100vh;
   transition: right 0.3s ease-in-out;
   z-index: 999;
