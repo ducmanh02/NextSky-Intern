@@ -3,8 +3,6 @@ const closeAdsNotification = () => {
   AdsNotification.style.display = "none";
 };
 
-
-
 const toggleHomeModal = () => {
   const modal = document.querySelector(".header-home-hover-modal");
   modal.classList.toggle("show");
@@ -268,7 +266,6 @@ accordionTitles.forEach((title, index) => {
   });
 });
 
-
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
@@ -299,3 +296,28 @@ var newArrivalSwiper = new Swiper(".newArrival", {
     prevEl: "#newArrivals-prev",
   },
 });
+
+var customerSaySwiper = new Swiper(".customerSay-list-wrapper-mobile", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: "#next-customerSay",
+    prevEl: "#prev-customerSay",
+  },
+});
+
+// go to top
+const goToTop = document.querySelector(".button-toTop-mobile");
+goToTop.addEventListener("click", () => {
+  window.scroll({top: 0, behavior: "smooth"})
+});
+window.onscroll = function () {
+  scrollFunction();
+};
+const scrollFunction = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    goToTop.style.display = "flex";
+  } else {
+    goToTop.style.display = "none";
+  }
+};

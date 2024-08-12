@@ -678,6 +678,10 @@ background: #000;
   height: 70px;
   border-radius: 50%;
 }
+
+.customerSay-list-wrapper-mobile{
+  display: none;
+}
 .instagramShop-container .image-list {
   overflow: hidden;
 }
@@ -782,12 +786,12 @@ background: #000;
 
 .button-fixed-mobile{
   display: none;
-  z-index: 800;
+  
 }
 .button-toTop-mobile{
   position: fixed;
   bottom:155px;
-
+  z-index: 800;
   right: 20px;
   width: 50px;
   height: 50px;
@@ -803,6 +807,7 @@ background: #000;
   height: 60px;
   background: #26A66A;
   border-radius: 50%;
+  z-index: 800;
 }
 
 
