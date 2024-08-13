@@ -170,9 +170,9 @@ const createCartItemHTML = (item) => {
                                             <button onclick="increaseQuantity(this)"><span class="icon-plus"></span></button>
                                         </div>
                                     </div>
-                                    <div class="action d-flex flex-column gap-10">
-                                        <img class="pointer" src="./assets/images/icon/edit.svg" alt="edit-button">
+                                    <div class="action d-flex flex-column gap-10 mt-5">
                                         <img class="pointer" src="./assets/images/icon/delete.svg" alt="delete-button" onclick="removeFromCart(this)">
+                                        <img class="pointer" src="./assets/images/icon/edit.svg" alt="edit-button">
                                     </div>
                                 </div>
                             </div>
