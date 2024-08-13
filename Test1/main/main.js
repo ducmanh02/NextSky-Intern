@@ -171,8 +171,8 @@ const createCartItemHTML = (item) => {
                                         </div>
                                     </div>
                                     <div class="action d-flex flex-column gap-10">
-                                        <img src="./assets/images/icon/edit.svg" alt="edit-button">
-                                        <img src="./assets/images/icon/delete.svg" alt="delete-button" onclick="removeFromCart(this)">
+                                        <img class="pointer" src="./assets/images/icon/edit.svg" alt="edit-button">
+                                        <img class="pointer" src="./assets/images/icon/delete.svg" alt="delete-button" onclick="removeFromCart(this)">
                                     </div>
                                 </div>
                             </div>

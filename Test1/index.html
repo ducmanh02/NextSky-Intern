@@ -88,7 +88,7 @@
                         <img class="home-link-icon" src="./assets/images/icon/down.svg" alt="down" height="10"
                             width="10">
                     </div>
-                    <div onmouseleave="hideShopModal()" class="header-home-hover-modal bg-white fs-16 fw-400 flex-column gap-15 border-radius-3">
+                    <div onmouseleave="hideHomeModal()" class="header-home-hover-modal bg-white fs-16 fw-400 flex-column gap-15 border-radius-3">
                         <div class="item">
                             <a class=" text-decoration-none text-black" href="#">Main demo</a>
                         </div>
@@ -433,7 +433,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column ">
@@ -478,7 +478,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column">
@@ -514,12 +514,12 @@
                             <div class="label d-flex flex-column gap-3">
                                 <div class="item ">
                                     <p
-                                        class="border-radius-30 text-white bg-noti-red percent fs-13 fw-400 d-flex justify-content-center align-items-center">
+                                        class="border-radius-30 text-white bg-noti-red percent fw-400 d-flex justify-content-center align-items-center">
                                         -10%</p>
                                 </div>
                                 <div class="item">
                                     <p
-                                        class="border-radius-30 text-white bg-noti-green pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
+                                        class="border-radius-30 text-white bg-noti-green pre-order fw-400 d-flex justify-content-center align-items-center ">
                                         Pre-Order</p>
                                 </div>
                             </div>
@@ -537,7 +537,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column ">
@@ -583,7 +583,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column">
@@ -631,7 +631,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column ">
@@ -674,7 +674,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column">
@@ -709,12 +709,12 @@
                         <div class="label d-flex flex-column gap-3">
                             <div class="item ">
                                 <p
-                                    class="border-radius-30 text-white bg-noti-red percent fs-13 fw-400 d-flex justify-content-center align-items-center">
+                                    class="border-radius-30 text-white bg-noti-red percent fw-400 d-flex justify-content-center align-items-center">
                                     -10%</p>
                             </div>
                             <div class="item">
                                 <p
-                                    class="border-radius-30 text-white bg-noti-green pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
+                                    class="border-radius-30 text-white bg-noti-green pre-order fw-400 d-flex justify-content-center align-items-center ">
                                     Pre-Order</p>
                             </div>
                         </div>
@@ -729,7 +729,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column ">
@@ -772,7 +772,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column">
@@ -818,8 +818,8 @@
                     <p class="fs-12 fw-500 ">ONLINE EXCLUSIVE</p>
                     <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-15">
                         Oversized Shirt</p>
-                    <p class="fs-12 fw-600 text-uppercase pointer">Shop the Look</p>
-                    <hr class="hr-banner">
+                    <a class="fs-12 fw-600 text-uppercase pointer link">Shop the Look</a>
+                    
                 </div>
             </div>
             <div class="big-banner-item flex-1">
@@ -828,8 +828,8 @@
                     <p class="fs-12 fw-500 text-uppercase">Best-Sellers</p>
                     <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-15">
                         Unique SS’23</p>
-                    <p class="fs-12 fw-600 text-uppercase pointer">Shop the Look</p>
-                    <hr class="hr-banner">
+                    <a class="fs-12 fw-600 text-uppercase pointer link">Shop the Look</a>
+                   
                 </div>
             </div>
             <div class="big-banner-item flex-1">
@@ -838,8 +838,8 @@
                     <p class="fs-12 fw-500 text-uppercase">limited edition</p>
                     <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-15">
                         Autumn Trends</p>
-                    <p class="fs-12 fw-600 text-uppercase pointer">Shop the Look</p>
-                    <hr class="hr-banner">
+                    <a class="fs-12 fw-600 text-uppercase pointer link">Shop the Look</a>
+                    
                 </div>
             </div>
         </div>
@@ -874,7 +874,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column">
@@ -909,7 +909,7 @@
 
                                 <div class="item">
                                     <p
-                                        class="border-radius-30 text-white bg-noti-gray pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
+                                        class="border-radius-30 text-white bg-noti-gray pre-order fw-400 d-flex justify-content-center align-items-center ">
                                         Sold Out</p>
                                 </div>
                             </div>
@@ -927,7 +927,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column">
@@ -975,7 +975,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column">
@@ -1020,7 +1020,7 @@
                                     <span class="icon-eye"></span>
                                 </div>
                                 <div class="item">
-                                    <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                    <span class="icon-shopping-cart"></span>
                                 </div>
                             </div>
                             <div class="product-text d-flex flex-column">
@@ -1069,7 +1069,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column">
@@ -1104,7 +1104,7 @@
 
                             <div class="item">
                                 <p
-                                    class="border-radius-30 text-white bg-noti-gray pre-order fs-13 fw-400 d-flex justify-content-center align-items-center ">
+                                    class="border-radius-30 text-white bg-noti-gray pre-order fw-400 d-flex justify-content-center align-items-center ">
                                     Sold Out</p>
                             </div>
                         </div>
@@ -1119,7 +1119,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column">
@@ -1132,7 +1132,7 @@
                                 <span class="icon-star"></span>
                             </div>
                             <div class="price fs-14 fw-500 text-noti-color-red mb-4">$150.00 <span
-                                    class="text-disabled text-decoration-line-through">$490.00</span></div>
+                                    class="text-disabled fs-14 fw-500 text-decoration-line-through">$490.00</span></div>
                             <div class="color-picker d-flex gap-5">
                                 <div
                                     class="container border-black d-flex justify-content-center align-items-center pointer">
@@ -1163,7 +1163,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column">
@@ -1205,7 +1205,7 @@
                                 <span class="icon-eye"></span>
                             </div>
                             <div class="item">
-                                <img src="./assets/images/icon/cart.svg" alt="add to cart" width="17">
+                                <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
                         <div class="product-text d-flex flex-column ">
@@ -1467,7 +1467,7 @@
                             <img src="./assets/images/icon/youtube.png" alt="youtube">
                         </div>
                         <div class="social-icon-item pointer">
-                            <img src="./assets/images/icon/tiktok.png" alt="twitter">
+                            <img src="./assets/images/icon/twitter.png" alt="twitter">
                         </div>
                         <div class="social-icon-item pointer">
                             <img src="./assets/images/icon/fb.png" alt="fb">
@@ -1613,7 +1613,7 @@
                         <input type="text" name="email" placeholder="Enter your email..."
                             class="border-radius-30 fs-14 fw-400">
                         <button type="submit"
-                            class="border-radius-30 bg-black text-white fs-12 w-600">Subscribe</button>
+                            class="border-radius-30 bg-black text-white fs-12 fw-600">SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
