@@ -19,7 +19,9 @@ span, p {
 button{
   cursor: pointer;
 }
-
+button{
+  color: #000;
+}
 a{
   font-family: "Jost", sans-serif;
   cursor: pointer;
