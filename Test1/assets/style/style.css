@@ -530,9 +530,9 @@ background: #000;
 }
 .feature-image-mobile .item-long .button {
   position: absolute;
-  bottom: 10%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate( -50% , 0);
 }
 .feature-image-mobile .item-long .button button {
   width: 120px;
@@ -550,9 +550,9 @@ background: #000;
 }
 .feature-image-mobile .item-short .button {
   position: absolute;
-  bottom: 10%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 .feature-image-mobile .item-short .button button {
   width: 120px;
@@ -663,15 +663,22 @@ background: #000;
   width: 75px;
 }
 
-.big-banner-container .big-banner-item img {
-  height: 800px;
+
+.big-banner-item img {
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   width: 100%;
-  object-position: 20% 10%;
+  transition: transform 0.3s ease-in-out;
+
+}
+.big-banner-container .big-banner-item:hover img{
+  transform: scale(1.05);
 }
 .big-banner-item {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .big-banner-item .text-container {
