@@ -384,3 +384,18 @@ const scrollFunction = () => {
     goToTop.style.display = "none";
   }
 };
+
+
+// disable minicart
+const body = document.body;
+const minicart = document.querySelector('.minicart');
+
+// Open the minicart
+minicart.addEventListener('click', () => {
+  body.classList.add('disable-scroll');
+});
+
+// Close the minicart
+minicart.addEventListener('click', () => {
+  body.classList.remove('disable-scroll');
+});
