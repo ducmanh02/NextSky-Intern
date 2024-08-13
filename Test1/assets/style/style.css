@@ -250,6 +250,7 @@ span {
 .minicart {
   position: fixed;
   top: 0;
+  bottom: 0;
   right: -450px;
   background-color: white;
   border-radius: 5px;
@@ -584,8 +585,12 @@ background: #000;
   height: 40px;
   border-radius: 50%;
   border: 1px solid #ebebeb;
+  cursor: pointer;
 }
-
+.button-list-mobile .item:hover{
+  background-color: #000;
+  color: #fff;
+}
 .color-picker .container {
   width: 25px;
   height: 25px;
@@ -647,7 +652,7 @@ background: #000;
   position: absolute;
   top: 15px;
   left: 15px;
-  font-size: clamp(9px, (1vw + 1vh) / 2 * 1.5, 13px);;
+  font-size: clamp(9px, (1vw + 1vh) / 2 * 1.5, 13px);
 }
 .product-item .label .item .percent {
   height: 25px;

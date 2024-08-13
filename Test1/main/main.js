@@ -294,32 +294,79 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".banner-button-right",
     prevEl: ".banner-button-left",
   },
+  
 });
 
-var newArrivalSwiper = new Swiper(".trending", {
+var trendingProductlSwiper = new Swiper(".trending", {
   slidesPerView: 2,
   spaceBetween: 20,
   navigation: {
     nextEl: "#next-trending-product",
     prevEl: "#prev-trending-product",
   },
+  breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
 });
 var newArrivalSwiper = new Swiper(".newArrival", {
   slidesPerView: 2,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: "#newArrivals-next",
     prevEl: "#newArrivals-prev",
   },
+  breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
 });
 
 var customerSaySwiper = new Swiper(".customerSay-list-wrapper-mobile", {
   slidesPerView: 1,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: "#next-customerSay",
     prevEl: "#prev-customerSay",
   },
+  breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
 });
 
 // go to top
