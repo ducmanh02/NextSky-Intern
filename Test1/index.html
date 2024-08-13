@@ -76,20 +76,19 @@
                 </div>
             </div>
 
-            <div class="header-bottom-left d-flex  py-24 py-20-xl py-14-l">
+            <div class="header-bottom-left d-flex  py-24 py-14-l">
                 <img src="./assets/images/logo/Logo.png" alt="Logo" height="20" width="90">
             </div>
-            <div
-                class="header-bottom-center align-items-center py-24  py-20-xl py-14-l d-flex gap-30 gap-15-m fs-16 fw-500 ">
+            <div class="header-bottom-center align-items-center py-24 py-14-l d-flex gap-30 gap-15-m fs-16 fw-500 " style="margin-left: 80px;">
                 <div class="header-bottom-center-item d-flex gap-5 ">
-                    <div onclick="toggleHomeModal()" class="home-link">
+                    <div onmouseenter="displayHomeModal()" class="home-link">
                         <a id="home-link" class="home-link-btn text-decoration-none text-black" href="#">Home</a>
                     </div>
-                    <div class="icon-container d-flex justify-content-center align-items-center">
+                    <div class="home-link icon-container d-flex justify-content-center align-items-center">
                         <img class="home-link-icon" src="./assets/images/icon/down.svg" alt="down" height="10"
                             width="10">
                     </div>
-                    <div class="header-home-hover-modal bg-white fs-16 fw-400 flex-column gap-15 border-radius-3">
+                    <div onmouseleave="hideShopModal()" class="header-home-hover-modal bg-white fs-16 fw-400 flex-column gap-15 border-radius-3">
                         <div class="item">
                             <a class=" text-decoration-none text-black" href="#">Main demo</a>
                         </div>
@@ -133,7 +132,7 @@
                     </div>
                 </div>
                 <div class="header-bottom-center-item d-flex gap-5 ">
-                    <div onclick="toggleShopModal()" class="shop-link">
+                    <div onmouseenter="displayShopModal()" class="shop-link">
                         <a class="shop-link-btn text-decoration-none text-black" href="#">Shop</a>
                     </div>
 
@@ -141,7 +140,7 @@
                         <img class="shop-link-icon" src="./assets/images/icon/down.svg" alt="down" height="10"
                             width="10">
                     </div>
-                    <div class="header-shop-hover-modal bg-white fs-16  gap-80  border-radius-3">
+                    <div onmouseleave="hideShopModal()" class="header-shop-hover-modal bg-white fs-16  gap-80  border-radius-3">
                         <div class="d-flex flex-column gap-20 ">
                             <div class="title">
                                 <p class="fw-500">Shop Layouts</p>
@@ -207,18 +206,14 @@
 
                 <div class="header-bottom-center-item d-flex gap-5 ">
                     <a class="text-decoration-none text-black" href="#">Sale</a>
-                    <div class="icon-container  d-flex justify-content-center align-items-center">
-                        <img src="./assets/images/icon/down.svg" alt="down" height="10" width="10">
-                    </div>
+                    
                 </div>
                 <div class="header-bottom-center-item d-flex gap-5 ">
                     <a class="text-decoration-none text-black" href="#">Buy Umino!</a>
-                    <div class="icon-container d-flex justify-content-center align-items-center">
-                        <img src="./assets/images/icon/down.svg" alt="down" height="10" width="10">
-                    </div>
+                    
                 </div>
             </div>
-            <div class="header-bottom-right py-24 py-20-xl py-14-l  mr-20 d-flex gap-20">
+            <div class="header-bottom-right py-24 py-14-l  mr-20 d-flex gap-20">
                 <div class="header-bottom-right-item hidden-M">
                     <img src="./assets/images/icon/Search.svg" alt="Search icon" width="17">
                 </div>
@@ -392,7 +387,7 @@
         <div class="trending-container px-255 px-100-xxl px-80-xl px-50-l px-40-m mb-100 mb-60-mobile">
             <div class="trending-text text-center mb-40 mb-20-mobile">
                 <div class="title mb-20-mobile">
-                    <p class="fs-45 fs-36-mobile fw-400 mb-5">Trending this Week</p>
+                    <p class="fs-45 fs-36-mobile fw-400 mb-20">Trending this Week</p>
                     <div class="text-mobile">
                         <p class=" fs-16 fw-400">Here’s some of our most popular products people are in love with.</p>
                     </div>
@@ -817,7 +812,7 @@
 
         <div class="big-banner-container d-flex gap-30 gap-20-mobile px-30 mb-100 mb-60-mobile">
             <div class="big-banner-item flex-1">
-                <img src="./assets/images/banner/bigbanner1.png" alt="big banner1">
+                <img src="./assets/images/banner/bigbanner1.jpg" alt="big banner1">
 
                 <div class="text-container">
                     <p class="fs-12 fw-500 ">ONLINE EXCLUSIVE</p>
@@ -828,7 +823,7 @@
                 </div>
             </div>
             <div class="big-banner-item flex-1">
-                <img src="./assets/images/banner/bigbanner2.png" alt="big banner1">
+                <img src="./assets/images/banner/bigbanner2.jpg" alt="big banner1">
                 <div class="text-container">
                     <p class="fs-12 fw-500 text-uppercase">Best-Sellers</p>
                     <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-15">
@@ -838,7 +833,7 @@
                 </div>
             </div>
             <div class="big-banner-item flex-1">
-                <img src="./assets/images/banner/bigbanner3.png" alt="big banner1">
+                <img src="./assets/images/banner/bigbanner3.jpg" alt="big banner1">
                 <div class="text-container">
                     <p class="fs-12 fw-500 text-uppercase">limited edition</p>
                     <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-15">

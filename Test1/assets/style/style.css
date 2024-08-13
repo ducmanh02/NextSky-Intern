@@ -33,7 +33,7 @@
 .header-home-hover-modal {
   position: absolute;
   z-index: 10;
-  top: 25px;
+  top: 45px;
   left: -30px;
   width: 250px;
   padding: 30px 0 30px 30px;
@@ -50,7 +50,7 @@
 .header-shop-hover-modal {
   position: absolute;
   z-index: 10;
-  top: 25px;
+  top: 40px;
   left: -50%;
   transform: translateX(-20%);
   width: 1047px;
@@ -658,13 +658,12 @@ background: #000;
   object-fit: cover;
   border-radius: 10px;
   width: 100%;
+  object-position: 20% 10%;
 }
 .big-banner-item {
   position: relative;
 }
-.big-banner-item img:nth-child(1){
-  transform: scaleX(-1);
-}
+
 .big-banner-item .text-container {
   position: absolute;
   bottom: 50px;

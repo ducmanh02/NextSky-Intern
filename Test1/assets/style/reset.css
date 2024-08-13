@@ -23,7 +23,7 @@ button{
 a{
   font-family: "Jost", sans-serif;
   cursor: pointer;
-
+  color: #000;
 }
 a:hover{
   color: var(--red-color);

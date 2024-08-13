@@ -3,22 +3,38 @@ const closeAdsNotification = () => {
   AdsNotification.style.display = "none";
 };
 
-const toggleHomeModal = () => {
+const displayHomeModal = () => {
   const modal = document.querySelector(".header-home-hover-modal");
-  modal.classList.toggle("show");
+  modal.classList.add("show");
   const homeLinkBtn = document.querySelector(".home-link-btn");
-  homeLinkBtn.classList.toggle("active-header-btn");
+  homeLinkBtn.classList.add("active-header-btn");
   const homeLinkIcon = document.querySelector(".home-link-icon");
-  homeLinkIcon.classList.toggle("active-header-btn-icon");
+  homeLinkIcon.classList.add("active-header-btn-icon");
 };
-const toggleShopModal = () => {
+const hideHomeModal = () =>{
+  const modal = document.querySelector(".header-home-hover-modal");
+  modal.classList.remove("show");
+  const homeLinkBtn = document.querySelector(".home-link-btn");
+  homeLinkBtn.classList.remove("active-header-btn");
+  const homeLinkIcon = document.querySelector(".home-link-icon");
+  homeLinkIcon.classList.remove("active-header-btn-icon");
+}
+const displayShopModal = () => {
   const modal = document.querySelector(".header-shop-hover-modal");
-  modal.classList.toggle("show");
+  modal.classList.add("show");
   const shopLinkBtn = document.querySelector(".shop-link-btn");
-  shopLinkBtn.classList.toggle("active-header-btn");
+  shopLinkBtn.classList.add("active-header-btn");
   const shopLinkIcon = document.querySelector(".shop-link-icon");
-  shopLinkIcon.classList.toggle("active-header-btn-icon");
+  shopLinkIcon.classList.add("active-header-btn-icon");
 };
+const hideShopModal = () =>{
+  const modal = document.querySelector(".header-shop-hover-modal");
+  modal.classList.remove("show");
+  const shopLinkBtn = document.querySelector(".shop-link-btn");
+  shopLinkBtn.classList.remove("active-header-btn");
+  const shopLinkIcon = document.querySelector(".shop-link-icon");
+  shopLinkIcon.classList.remove("active-header-btn-icon");
+}
 
 function toggleMinicart() {
   const minicart = document.querySelector(".minicart");
