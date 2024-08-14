@@ -3,38 +3,6 @@ const closeAdsNotification = () => {
   AdsNotification.style.display = "none";
 };
 
-// const displayHomeModal = () => {
-//   const modal = document.querySelector(".header-home-hover-modal");
-//   modal.classList.add("show");
-//   const homeLinkBtn = document.querySelector(".home-link-btn");
-//   homeLinkBtn.classList.add("active-header-btn");
-//   const homeLinkIcon = document.querySelector(".home-link-icon");
-//   homeLinkIcon.classList.add("active-header-btn-icon");
-// };
-// const hideHomeModal = () =>{
-//   const modal = document.querySelector(".header-home-hover-modal");
-//   modal.classList.remove("show");
-//   const homeLinkBtn = document.querySelector(".home-link-btn");
-//   homeLinkBtn.classList.remove("active-header-btn");
-//   const homeLinkIcon = document.querySelector(".home-link-icon");
-//   homeLinkIcon.classList.remove("active-header-btn-icon");
-// }
-// const displayShopModal = () => {
-//   const modal = document.querySelector(".header-shop-hover-modal");
-//   modal.classList.add("show");
-//   const shopLinkBtn = document.querySelector(".shop-link-btn");
-//   shopLinkBtn.classList.add("active-header-btn");
-//   const shopLinkIcon = document.querySelector(".shop-link-icon");
-//   shopLinkIcon.classList.add("active-header-btn-icon");
-// };
-// const hideShopModal = () =>{
-//   const modal = document.querySelector(".header-shop-hover-modal");
-//   modal.classList.remove("show");
-//   const shopLinkBtn = document.querySelector(".shop-link-btn");
-//   shopLinkBtn.classList.remove("active-header-btn");
-//   const shopLinkIcon = document.querySelector(".shop-link-icon");
-//   shopLinkIcon.classList.remove("active-header-btn-icon");
-// }
 
 function toggleMinicart() {
   const minicart = document.querySelector(".minicart");
@@ -149,9 +117,9 @@ const createCartItemHTML = (item) => {
                                     } alt="product-cart" width="100%"
                                         height="100%">
                                 </div>
-                                <div class="content d-flex justify-content-between flex-1">
-                                    <div class="d-flex flex-column gap-10">
-                                        <div class="detail">
+                                <div class="content d-flex justify-content-between">
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <div class="detail mb-12">
                                             <p class="fs-16 fw-400 mb-10">
                                                 ${item.name}
                                             </p>
@@ -297,7 +265,7 @@ const swiper = new Swiper(".mySwiper", {
   
 });
 
-var trendingProductlSwiper = new Swiper(".trending", {
+const trendingProductlSwiper = new Swiper(".trending", {
   slidesPerView: 2,
   spaceBetween: 20,
   navigation: {
@@ -321,7 +289,7 @@ var trendingProductlSwiper = new Swiper(".trending", {
     }
   }
 });
-var newArrivalSwiper = new Swiper(".newArrival", {
+const newArrivalSwiper = new Swiper(".newArrival", {
   slidesPerView: 2,
   spaceBetween: 20,
   loop: true,
@@ -347,7 +315,7 @@ var newArrivalSwiper = new Swiper(".newArrival", {
   }
 });
 
-var customerSaySwiper = new Swiper(".customerSay-list-wrapper-mobile", {
+const customerSaySwiper = new Swiper(".customerSay-list-wrapper-mobile", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
