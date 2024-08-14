@@ -917,3 +917,10 @@ span {
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 8px);
 }
+
+
+/* max width */
+.feature-container,.trending-container,.newArrivals-container,.customerSay-container,.instagramShop-container,.footer{
+  max-width: 1440px;
+  /* margin: auto   */
+}

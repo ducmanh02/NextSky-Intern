@@ -640,6 +640,10 @@
   .fs-70-xxl {
     font-size: 70px;
   }
+  
+  .m-auto{
+    margin: auto;
+  }
   .px-100-xxl {
     padding: 0 100px;
   }
