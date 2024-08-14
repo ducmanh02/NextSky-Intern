@@ -70,7 +70,12 @@ rating .header-home-hover-modal .item:hover,
 }
 .header-shop-hover-modal .image-container {
   position: relative;
+  aspect-ratio: 0.81;
 }
+.header-shop-hover-modal .image-container img {
+  aspect-ratio: 0.81;
+}
+
 .header-shop-hover-modal .image-container button {
   position: absolute;
   bottom: 20px;
@@ -159,6 +164,7 @@ span {
   width: 22px;
   height: 22px;
   border-radius: 50%;
+  aspect-ratio: 1.33;
 }
 .nav-container.show {
   left: 0;
@@ -223,6 +229,7 @@ span {
 }
 .nav-container-submenu-shop .list-link .image-container .image-item {
   position: relative;
+  aspect-ratio: 0.81;
 }
 .nav-container-submenu-shop .list-link .image-container .image-item button {
   position: absolute;
@@ -236,12 +243,10 @@ span {
   bottom: 30px;
   transform: translateX(-50%);
 }
-.nav-container-submenu-shop .list-link .image-container .image-item{
-  aspect-ratio: 0.81;
-}
+
 .nav-container-submenu-shop .list-link .image-container img {
   width: 100%;
-  
+  aspect-ratio: 0.81;
 }
 
 /* sub shop shop layout */
