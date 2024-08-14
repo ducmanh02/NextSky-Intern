@@ -158,15 +158,13 @@
   }
   .big-banner-container {
     width: auto;
-    overflow: scroll;
+    overflow-x: scroll;
   }
   .big-banner-container .big-banner-item{
-    overflow: visible;
+    flex: 0 0 66%
   }
   .big-banner-container .big-banner-item img {
-    height: 400px;
-    width: 300px;
-    object-fit: cover;
+    width: 100%;
     border-radius: 10px;
   }
   .big-banner-item .text-container {
@@ -243,6 +241,9 @@
   }
   .fs-20-sm {
     font-size: 20px;
+  }
+  .fs-24-sm {
+    font-size: 24px;
   }
   .fs-42-m {
     font-size: 42px;
@@ -329,18 +330,16 @@
     overflow: hidden;
   }
   .big-banner-container .big-banner-item{
-    overflow: visible;
+    flex: 0 0 66%
   }
   .big-banner-container .big-banner-item img {
-    height: 400px;
-    width: 300px;
-    object-fit: cover;
+    width: 100%;
     border-radius: 10px;
   }
 
   .big-banner-item .text-container {
-    bottom: 20px;
-    left: 20px;
+    bottom: 30px;
+    left: 30px;
   }
   .feature-image-item-long .button {
     bottom: 20px;

@@ -3,38 +3,38 @@ const closeAdsNotification = () => {
   AdsNotification.style.display = "none";
 };
 
-const displayHomeModal = () => {
-  const modal = document.querySelector(".header-home-hover-modal");
-  modal.classList.add("show");
-  const homeLinkBtn = document.querySelector(".home-link-btn");
-  homeLinkBtn.classList.add("active-header-btn");
-  const homeLinkIcon = document.querySelector(".home-link-icon");
-  homeLinkIcon.classList.add("active-header-btn-icon");
-};
-const hideHomeModal = () =>{
-  const modal = document.querySelector(".header-home-hover-modal");
-  modal.classList.remove("show");
-  const homeLinkBtn = document.querySelector(".home-link-btn");
-  homeLinkBtn.classList.remove("active-header-btn");
-  const homeLinkIcon = document.querySelector(".home-link-icon");
-  homeLinkIcon.classList.remove("active-header-btn-icon");
-}
-const displayShopModal = () => {
-  const modal = document.querySelector(".header-shop-hover-modal");
-  modal.classList.add("show");
-  const shopLinkBtn = document.querySelector(".shop-link-btn");
-  shopLinkBtn.classList.add("active-header-btn");
-  const shopLinkIcon = document.querySelector(".shop-link-icon");
-  shopLinkIcon.classList.add("active-header-btn-icon");
-};
-const hideShopModal = () =>{
-  const modal = document.querySelector(".header-shop-hover-modal");
-  modal.classList.remove("show");
-  const shopLinkBtn = document.querySelector(".shop-link-btn");
-  shopLinkBtn.classList.remove("active-header-btn");
-  const shopLinkIcon = document.querySelector(".shop-link-icon");
-  shopLinkIcon.classList.remove("active-header-btn-icon");
-}
+// const displayHomeModal = () => {
+//   const modal = document.querySelector(".header-home-hover-modal");
+//   modal.classList.add("show");
+//   const homeLinkBtn = document.querySelector(".home-link-btn");
+//   homeLinkBtn.classList.add("active-header-btn");
+//   const homeLinkIcon = document.querySelector(".home-link-icon");
+//   homeLinkIcon.classList.add("active-header-btn-icon");
+// };
+// const hideHomeModal = () =>{
+//   const modal = document.querySelector(".header-home-hover-modal");
+//   modal.classList.remove("show");
+//   const homeLinkBtn = document.querySelector(".home-link-btn");
+//   homeLinkBtn.classList.remove("active-header-btn");
+//   const homeLinkIcon = document.querySelector(".home-link-icon");
+//   homeLinkIcon.classList.remove("active-header-btn-icon");
+// }
+// const displayShopModal = () => {
+//   const modal = document.querySelector(".header-shop-hover-modal");
+//   modal.classList.add("show");
+//   const shopLinkBtn = document.querySelector(".shop-link-btn");
+//   shopLinkBtn.classList.add("active-header-btn");
+//   const shopLinkIcon = document.querySelector(".shop-link-icon");
+//   shopLinkIcon.classList.add("active-header-btn-icon");
+// };
+// const hideShopModal = () =>{
+//   const modal = document.querySelector(".header-shop-hover-modal");
+//   modal.classList.remove("show");
+//   const shopLinkBtn = document.querySelector(".shop-link-btn");
+//   shopLinkBtn.classList.remove("active-header-btn");
+//   const shopLinkIcon = document.querySelector(".shop-link-icon");
+//   shopLinkIcon.classList.remove("active-header-btn-icon");
+// }
 
 function toggleMinicart() {
   const minicart = document.querySelector(".minicart");

@@ -80,15 +80,15 @@
                 <img src="./assets/images/logo/Logo.png" alt="Logo" height="20" width="90">
             </div>
             <div class="header-bottom-center align-items-center py-24  d-flex gap-30 gap-15-m fs-16 fw-500 " style="margin-left: 80px;">
-                <div class="header-bottom-center-item d-flex gap-8 ">
-                    <div onmouseenter="displayHomeModal()" class="home-link">
-                        <a id="home-link" class="home-link-btn text-decoration-none text-black" href="#">Home</a>
+                <div class="header-bottom-center-item home-link d-flex gap-8 ">
+                    <div >
+                        <a  class="home-link-btn text-decoration-none text-black" href="#">Home</a>
                     </div>
-                    <div class="home-link icon-container d-flex justify-content-center align-items-center">
+                    <div class="icon-container d-flex justify-content-center align-items-center">
                         <img class="home-link-icon" src="./assets/images/icon/down.svg" alt="down" height="10"
                             width="10">
                     </div>
-                    <div onmouseleave="hideHomeModal()" class="header-home-hover-modal bg-white fs-16 fw-400 flex-column gap-15 border-radius-3">
+                    <div class="header-home-hover-modal bg-white fs-16 fw-400 flex-column gap-15 border-radius-3">
                         <div class="item">
                             <a class=" text-decoration-none text-black" href="#">Main demo</a>
                         </div>
@@ -131,8 +131,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-bottom-center-item d-flex gap-8 ">
-                    <div onmouseenter="displayShopModal()" class="shop-link">
+                <div class="header-bottom-center-item d-flex gap-8 shop-link">
+                    <div class="shop-link">
                         <a class="shop-link-btn text-decoration-none text-black" href="#">Shop</a>
                     </div>
 
@@ -140,7 +140,7 @@
                         <img class="shop-link-icon" src="./assets/images/icon/down.svg" alt="down" height="10"
                             width="10">
                     </div>
-                    <div onmouseleave="hideShopModal()" class="header-shop-hover-modal bg-white fs-16  gap-80  border-radius-3">
+                    <div class="header-shop-hover-modal bg-white fs-16  gap-80  border-radius-3">
                         <div class="d-flex flex-column gap-20 ">
                             <div class="title">
                                 <p class="fw-500">Shop Layouts</p>
@@ -235,14 +235,7 @@
                     </div>
                     <img src="./assets/images/icon/cart.svg" alt="cart icon" width="17">
                 </div>
-
-
-
-
             </div>
-
-
-
         </div>
     </div>
     <div class="main">
@@ -273,7 +266,7 @@
                             <div class="title mb-20">
                                 <p class="fs-80 fs-70-xxl fs-50-l fs-42-m fw-400 ">Stylish <br> Top Trending</p>
                             </div>
-                            <div class="description mb-30">
+                            <div class="description mb-45">
                                 <p class="fs-16">
                                     So soft you don't want to take it off.
                                 </p>
@@ -291,7 +284,7 @@
                             <div class="title mb-20">
                                 <p class="fs-80 fs-70-xxl fs-50-l fs-42-m fw-400 ">Stylish <br> Top Trending</p>
                             </div>
-                            <div class="description mb-30">
+                            <div class="description mb-45">
                                 <p class="fs-16">
                                     So soft you don't want to take it off.
                                 </p>
@@ -423,7 +416,7 @@
                 <div class="swiper-wrapper product-list d-flex gap-0-mobile ">
                     <div class="swiper-slide">
                         <div class="product-item flex-1">
-                            <img class="image-product mb-16" src="./assets/images/product/product1.jpg"
+                            <img class="image-product mb-10" src="./assets/images/product/product1.jpg"
                                 alt="product-image">
                             <div class="list-button fs-14 fw-400">
                                 <div class="item">
@@ -622,7 +615,7 @@
             <div class="product-list-wrapper">
                 <div class="product-list d-flex gap-30 gap-15-m  gap-0-mobile ">
                     <div class="product-item flex-1">
-                        <img class="image-product mb-16" src="./assets/images/product/product1.jpg" alt="product-image">
+                        <img class="image-product mb-10" src="./assets/images/product/product1.jpg" alt="product-image">
                         <div class="list-button fs-14 fw-400">
                             <div class="item">
                                 <span class="icon-wishlist1"></span>
@@ -634,7 +627,7 @@
                                 <span class="icon-shopping-cart"></span>
                             </div>
                         </div>
-                        <div class="product-text d-flex flex-column ">
+                        <div class="product-text d-flex flex-column">
                             <div class="title fs-16 fw-400">Square Textured Striped</div>
                             <div class="rating">
                                 <span class="icon-star"></span>
@@ -664,7 +657,7 @@
                         </div>
                     </div>
                     <div class="product-item flex-1">
-                        <img class=" image-product mb-16" src="./assets/images/product/product2.jpg"
+                        <img class=" image-product mb-10" src="./assets/images/product/product2.jpg"
                             alt="product-image">
                         <div class="list-button fs-14 fw-400">
                             <div class="item">
@@ -720,7 +713,7 @@
                         </div>
                     </div>
                     <div class="product-item flex-1">
-                        <img class="image-product mb-16" src="./assets/images/product/product3.jpg" alt="product-image">
+                        <img class="image-product mb-10" src="./assets/images/product/product3.jpg" alt="product-image">
                         <div class="list-button fs-14 fw-400">
                             <div class="item">
                                 <span class="icon-wishlist1"></span>
@@ -763,7 +756,7 @@
 
                     </div>
                     <div class="product-item flex-1">
-                        <img class="image-product mb-16" src="./assets/images/product/product4.jpg" alt="product-image">
+                        <img class="image-product mb-10" src="./assets/images/product/product4.jpg" alt="product-image">
                         <div class="list-button fs-14 fw-400">
                             <div class="item">
                                 <span class="icon-wishlist1"></span>
@@ -813,20 +806,18 @@
         <div class="big-banner-container d-flex gap-30 gap-15-m gap-20-mobile px-30 px-40-m px-20-mobile mb-100 mb-60-mobile">
             <div class="big-banner-item flex-1">
                 <img src="./assets/images/banner/bigbanner1.jpg" alt="big banner1">
-
                 <div class="text-container">
                     <p class="fs-12 fw-500 ">ONLINE EXCLUSIVE</p>
-                    <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-10">
+                    <p class="fs-36 fs-24-l fs-24-sm fs-30-mobile fw-400 mb-5">
                         Oversized Shirt</p>
-                    <a class="fs-12 fw-600 text-uppercase pointer link">Shop the Look</a>
-                    
+                    <a class="fs-12 fw-600 text-uppercase pointer link">Shop the Look</a>   
                 </div>
             </div>
             <div class="big-banner-item flex-1">
                 <img src="./assets/images/banner/bigbanner2.jpg" alt="big banner1">
                 <div class="text-container">
                     <p class="fs-12 fw-500 text-uppercase">Best-Sellers</p>
-                    <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-10">
+                    <p class="fs-36 fs-24-l fs-24-sm fs-30-mobile fw-400 mb-5">
                         Unique SS’23</p>
                     <a class="fs-12 fw-600 text-uppercase pointer link">Shop the Look</a>
                    
@@ -836,7 +827,7 @@
                 <img src="./assets/images/banner/bigbanner3.jpg" alt="big banner1">
                 <div class="text-container">
                     <p class="fs-12 fw-500 text-uppercase">limited edition</p>
-                    <p class="fs-36 fs-24-l fs-20-sm fs-30-mobile fw-400 mb-10">
+                    <p class="fs-36 fs-24-l fs-24-sm fs-30-mobile fw-400 mb-5">
                         Autumn Trends</p>
                     <a class="fs-12 fw-600 text-uppercase pointer link">Shop the Look</a>
                     
@@ -1264,7 +1255,7 @@
                             <img src="./assets/images/user/user1.png" alt="avatar">
                         </div>
                         <div class="title">
-                            <p>A perfect product, it keeps you very warm without over heating. True to size, I couldn't
+                            <p class="text-footer-color">A perfect product, it keeps you very warm without over heating. True to size, I couldn't
                                 be
                                 happier with the purchase... Thank you! 🤗</p>
                         </div>
@@ -1276,7 +1267,7 @@
                                 <span class="icon-star"></span>
                                 <span class="icon-star"></span>
                             </div>
-                            <div class="username">Algistino Lionel - Verified Buyer</div>
+                            <p class="username">Algistino Lionel - Verified Buyer</p>
                         </div>
                     </div>
                     <div class="customerSay-item flex-1 d-flex flex-column gap-20">
@@ -1284,7 +1275,7 @@
                             <img src="./assets/images/user/user2.png" alt="avatar">
                         </div>
                         <div class="title">
-                            <p>Great to be able to order everything I needed from the comfort of my home and the
+                            <p class="text-footer-color">Great to be able to order everything I needed from the comfort of my home and the
                                 delivery
                                 was extremely quick. Recommend... 🥰</p>
                         </div>
@@ -1296,7 +1287,7 @@
                                 <span class="icon-star"></span>
                                 <span class="icon-star"></span>
                             </div>
-                            <div class="username">Algistino Lionel - Verified Buyer</div>
+                            <p class="username">Algistino Lionel - Verified Buyer</p>
                         </div>
                     </div>
                     <div class="customerSay-item flex-1 d-flex flex-column gap-20">
@@ -1304,7 +1295,7 @@
                             <img src="./assets/images/user/user3.png" alt="avatar">
                         </div>
                         <div class="title">
-                            <p>These are sooo pretty and very comfy. Perfect color as well. I love wearing these with a
+                            <p class="text-footer-color">These are sooo pretty and very comfy. Perfect color as well. I love wearing these with a
                                 neutral top and Chelsea boots. Wicked cute...😍</p>
                         </div>
                         <div class="d-flex flex-column gap-15 ">
@@ -1315,7 +1306,7 @@
                                 <span class="icon-star"></span>
                                 <span class="icon-star"></span>
                             </div>
-                            <div class="username">Algistino Lionel - Verified Buyer</div>
+                            <p class="username">Algistino Lionel - Verified Buyer</p>
                         </div>
                     </div>
                 </div>
@@ -1329,7 +1320,7 @@
                                 <img src="./assets/images/user/user1.png" alt="avatar">
                             </div>
                             <div class="title">
-                                <p>A perfect product, it keeps you very warm without over heating. True to size, I
+                                <p class="text-footer-color">A perfect product, it keeps you very warm without over heating. True to size, I
                                     couldn't
                                     be
                                     happier with the purchase... Thank you! 🤗</p>
@@ -1342,7 +1333,7 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="username">Algistino Lionel - Verified Buyer</div>
+                                <p class="username">Algistino Lionel - Verified Buyer</p>
                             </div>
                         </div>
                     </div>
@@ -1352,7 +1343,7 @@
                                 <img src="./assets/images/user/user2.png" alt="avatar">
                             </div>
                             <div class="title">
-                                <p>Great to be able to order everything I needed from the comfort of my home and the
+                                <p class="text-footer-color">Great to be able to order everything I needed from the comfort of my home and the
                                     delivery
                                     was extremely quick. Recommend... 🥰</p>
                             </div>
@@ -1364,7 +1355,7 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="username">Algistino Lionel - Verified Buyer</div>
+                                <p class="username">Algistino Lionel - Verified Buyer</p>
                             </div>
                         </div>
                     </div>
@@ -1374,7 +1365,7 @@
                                 <img src="./assets/images/user/user3.png" alt="avatar">
                             </div>
                             <div class="title">
-                                <p>These are sooo pretty and very comfy. Perfect color as well. I love wearing these
+                                <p class="text-footer-color">These are sooo pretty and very comfy. Perfect color as well. I love wearing these
                                     with a
                                     neutral top and Chelsea boots. Wicked cute...😍</p>
                             </div>
@@ -1386,7 +1377,7 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="username">Algistino Lionel - Verified Buyer</div>
+                                <p class="username">Algistino Lionel - Verified Buyer</p>
                             </div>
                         </div>
                     </div>
