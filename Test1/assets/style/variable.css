@@ -241,11 +241,17 @@
 .mb-80 {
   margin-bottom: 80px;
 }
+.mb-90{
+  margin-bottom: 90px;
+}
 .mb-100 {
   margin-bottom: 100px;
 }
 .mr-10 {
   margin-right: 10px;
+}
+.mr-15{
+  margin-right: 15px;
 }
 .mr-20 {
   margin-right: 20px;

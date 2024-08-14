@@ -21,6 +21,11 @@ button{
 }
 button{
   color: #000;
+  outline: none;
+}
+button:active {
+  outline: none;
+  border: none;
 }
 a{
   font-family: "Jost", sans-serif;
