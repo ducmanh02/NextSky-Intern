@@ -131,11 +131,11 @@ const createCartItemHTML = (item) => {
                                             )}</p>
                                         </div>
                                         <div class="quantity-stepper fs-14 fw-400">
-                                            <button onclick="decreaseQuantity(this)"><span class="icon-minus"></span></button>
+                                            <button onclick="decreaseQuantity(this)" aria-label="decreaseQuantity"><span class="icon-minus"></span></button>
                                             <span class="quantity" class="fs-14 fw-400">${
                                               item.quantity
                                             }</span>
-                                            <button onclick="increaseQuantity(this)"><span class="icon-plus"></span></button>
+                                            <button onclick="increaseQuantity(this)" aria-label="increaseQuantity"><span class="icon-plus"></span></button>
                                         </div>
                                     </div>
                                     <div class="action d-flex flex-column gap-10 mt-5">
