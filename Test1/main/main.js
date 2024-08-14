@@ -114,16 +114,16 @@ const createCartItemHTML = (item) => {
                                 <div class="image">
                                     <img src=${
                                       item.image
-                                    } alt="product-cart" width="100%"
-                                        height="100%">
+                                    } alt="product-cart" width="84"
+                                        height="113">
                                 </div>
                                 <div class="content d-flex justify-content-between">
-                                    <div class="d-flex flex-column justify-content-between">
-                                        <div class="detail mb-12">
-                                            <p class="fs-16 fw-400 mb-10">
+                                    <div class="d-flex flex-column">
+                                        <div class="detail mb-8">
+                                            <p class="fs-16 fw-400">
                                                 ${item.name}
                                             </p>
-                                            <p class="fs-14 fw-400 text-disabled mb-15">
+                                            <p class="fs-14 fw-400 text-disabled mb-10">
                                                 ${item.color}
                                             </p>
                                             <p class="fs-14 fw-500">$${item.price.toFixed(
