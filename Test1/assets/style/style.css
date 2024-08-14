@@ -343,6 +343,9 @@ span {
   border-radius: 10px;
   background-color: #ef262c;
 }
+.minicart .list-item-cart .item .card .image{
+  aspect-ratio: 3/4;
+}
 .minicart .list-item-cart .item .card .content{
   flex: 0 0 70%;
 }
