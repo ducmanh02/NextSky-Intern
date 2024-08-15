@@ -6,6 +6,9 @@
   .px-20-mobile {
     padding: 0 20px;
   }
+  .banner-text {
+    width: 70%;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) mobile */
@@ -115,7 +118,7 @@
     object-fit: cover;
   }
   .banner-text {
-    width: 60%;
+    width: 65%;
   }
   .banner-text .button button {
     width: 180px;
@@ -451,7 +454,7 @@
     width: 150px;
   }
   .feature-image-item-long {
-    width: 50%;
+    width: 33%;
     height: 450px;
   }
   .feature-image-item-short {

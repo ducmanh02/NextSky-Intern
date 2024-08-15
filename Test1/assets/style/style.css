@@ -12,7 +12,7 @@
 .hr-style {
   width: 100%;
   outline: none;
-  border: 0.5px solid var(--hr-color);
+  border-bottom: 0.5px solid var(--hr-color);
 }
 .hr-banner {
   width: 45%;
@@ -24,7 +24,9 @@
   border: none;
   border-top: 1px dotted #ebebeb;
 }
-
+.header-bottom-center{
+  margin-left: 15px;
+}
 .header-bottom-center-item {
   position: relative;
 }
@@ -142,7 +144,7 @@ rating .header-home-hover-modal .item:hover,
 }
 
 .nav-container .list-link .item {
-  margin: 16px 0;
+  padding: 16px 0;
   cursor: pointer;
 }
 .nav-container .list-link .item p,
@@ -195,7 +197,7 @@ span {
 .nav-container-submenu-home .list-link .item,
 .nav-container-submenu-shop .list-link .item,
 .nav-container-submenu-shop-shoplayout .list-link .item {
-  margin: 16px 0;
+  padding: 16px 0;
   cursor: pointer;
 }
 .nav-container-submenu-home .list-link .item p,

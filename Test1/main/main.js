@@ -138,7 +138,7 @@ const createCartItemHTML = (item) => {
                                             <p class="fs-16 fw-400">
                                                 ${item.name}
                                             </p>
-                                            <p class="fs-14 fw-400 text-disabled mb-10">
+                                            <p class="fs-14 fw-400 text-sale mb-10">
                                                 ${item.color}
                                             </p>
                                             <p class="fs-14 fw-500">$${item.price.toFixed(
@@ -239,13 +239,11 @@ const accordionTitles = document.querySelectorAll(
 );
 const accordionContents = document.querySelectorAll(".open-link");
 const accordionIcons = document.querySelectorAll(
-  ".footer-about-mobile-item .icon"
+  ".accordion .icon"
 );
 
 accordionTitles.forEach((title, index) => {
   title.addEventListener("click", () => {
-    // Thêm/xóa class 'active' cho tiêu đề
-    title.classList.toggle("active");
 
     // Hiện/ẩn nội dung accordion
     const content = accordionContents[index];
@@ -257,9 +255,9 @@ accordionTitles.forEach((title, index) => {
 
     // Cập nhật biểu tượng dấu cộng/trừ
     const icon = accordionIcons[index];
-    if (content.style.display === "block") {
+    if (content.style.display === "flex") {
       icon.innerHTML = `<p class="icon-minus"></p>`;
-    } else {
+    } else if(content.style.display === "none"){
       icon.innerHTML = `<p class="icon-plus"></p>`;
     }
   });

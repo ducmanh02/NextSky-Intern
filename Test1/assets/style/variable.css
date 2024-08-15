@@ -6,7 +6,7 @@
   --product-color-2: #492919;
   --product-color-3: #dfd3c2;
   --hr-color: #e5e8ec;
-  --button-color: #f5f5f5;
+  --button-color: #f5f5f578;
   --disable-color: #999999;
   --footer-text-color: #555555;
   --label-header-color-1: #e02f60;
@@ -162,12 +162,19 @@
 .pb-20{
   padding-bottom: 20px;
 }
+.pb-30{
+  padding-bottom: 30px;
+}
+.pb-80{
+  padding-bottom: 80px;
+}
 .px-25 {
   padding: 0 25px;
 }
 .px-30 {
   padding: 0 30px;
 }
+
 .px-255 {
   padding: 0 255px;
 }
@@ -336,6 +343,9 @@
 /* button */
 .border-radius-3 {
   border-radius: 3px;
+}
+.border-radius-10{
+  border-radius: 10px;
 }
 .border-radius-30 {
   border-radius: 30px;
