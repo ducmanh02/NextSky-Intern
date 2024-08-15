@@ -241,6 +241,9 @@
 .mb-80 {
   margin-bottom: 80px;
 }
+.mb-85 {
+  margin-bottom: 85px;
+}
 .mb-90{
   margin-bottom: 90px;
 }
@@ -271,6 +274,12 @@
 }
 .justify-content-between {
   justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.justify-content-start {
+  justify-content: start;
 }
 .align-items-center {
   align-items: center;

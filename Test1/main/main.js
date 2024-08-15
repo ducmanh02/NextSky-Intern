@@ -114,12 +114,11 @@ const createCartItemHTML = (item) => {
                                 <div class="image">
                                     <img src=${
                                       item.image
-                                    } alt="product-cart" width="84"
-                                        height="113">
+                                    } alt="product-cart">
                                 </div>
                                 <div class="content d-flex justify-content-between">
                                     <div class="d-flex flex-column">
-                                        <div class="detail mb-8">
+                                        <div class="detail mb-5">
                                             <p class="fs-16 fw-400">
                                                 ${item.name}
                                             </p>
