@@ -119,6 +119,8 @@
   }
   .banner-text {
     width: 65%;
+    text-align: start;
+    left: 36%;
   }
   .banner-text .button button {
     width: 180px;
