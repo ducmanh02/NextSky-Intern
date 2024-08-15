@@ -11,6 +11,7 @@
   --footer-text-color: #555555;
   --label-header-color-1: #e02f60;
   --label-header-color-2: #516cf4;
+  --text-sale:#757575;
 }
 /* Text color */
 .text-white {
@@ -27,6 +28,9 @@
 }
 .text-footer-color {
   color: var(--footer-text-color);
+}
+.text-sale{
+  color: var(--text-sale);
 }
 /* text font size font weight */
 .fs-9 {

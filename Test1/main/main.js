@@ -1,12 +1,28 @@
+// Ngăn chặn cuộn trang
+const disableScroll = () => {
+  // window.scrollTo(0, 0);  // Đưa trang về đầu
+  window.addEventListener('wheel', preventDefault, { passive: false });
+  window.addEventListener('touchmove', preventDefault, { passive: false });
+}
+
+const enableScroll = () => {
+  window.removeEventListener('wheel', preventDefault);
+  window.removeEventListener('touchmove', preventDefault);
+}
+
+const preventDefault = (e) => {
+  e.preventDefault();
+}
+
 const closeAdsNotification = () => {
   const AdsNotification = document.querySelector(".notification");
   AdsNotification.style.display = "none";
 };
 
-
 function toggleMinicart() {
   const minicart = document.querySelector(".minicart");
   const overlay = document.querySelector(".overlay");
+  disableScroll();
   minicart.classList.toggle("show");
   overlay.classList.toggle("show");
 }
