@@ -22,7 +22,7 @@ const closeAdsNotification = () => {
 function toggleMinicart() {
   const minicart = document.querySelector(".minicart");
   const overlay = document.querySelector(".overlay");
-  disableScroll();
+
   minicart.classList.toggle("show");
   overlay.classList.toggle("show");
 }
