@@ -344,7 +344,7 @@ span {
   width: 70%;
   height: 100%;
   border-radius: 10px;
-  background-color: #ef262c;
+  background-color: #dd3327;
 }
 .minicart .list-item-cart .item .card .image{
   width: 84px;
@@ -820,7 +820,7 @@ span {
 .footer-about-mobile-item .contact-form input {
   padding: 10px 20px;
   border: 1px solid #ebebeb;
-  color: #999999;
+  color: #5c5959;
   width: 230px;
   height: 50px;
   flex-grow: 1;
@@ -932,7 +932,7 @@ span {
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 6px);
+  margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 8px);
 }
 
 
